@@ -30,3 +30,5 @@ Notifikasi mengenai adanya inter-warehouse out yang harus diproses
 
 
 ## <a name="output">D. OUTPUT</output>
+
+Notifikasi bahwa inter-warehouse out siap dikirim
