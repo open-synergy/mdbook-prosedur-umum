@@ -3,6 +3,7 @@
 [Pra-kata](./prakata.md)
 [Terminologi](./terminologi.md)
 - [Finance & Accounting](./fa.md)
+    - [Menerima Uang Di Bank](./fa/menerima-bank.md)
 - [Inventory](./inventory.md)
     - [Meminta Barang Dari Gudang Lain](./inventory/create-pull-flow.md)
     - [Memproses Permintaan Barang Dari Gudang Lain](./inventory/memproses-interwarehouse-out-pull-flow.md)
