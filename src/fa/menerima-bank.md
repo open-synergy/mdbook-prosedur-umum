@@ -17,7 +17,7 @@ Ada notifikasi bahwa ada uang masuk ke bank.
 
 #### C.1.1 Instruksi Kerja Utama
 
-[Odoo - Finance & Accounting: 2.6.2](https://open-synergy.github.io/mdbook-fa/transaksi/bank-receipt.html)
+[Odoo - Finance & Accounting: 2.6.2](https://open-synergy.github.io/mdbook-fa/transaksi/bank-receipt/membuat.html)
 
 #### C.1.2 Sub Instruksi Kerja
 
