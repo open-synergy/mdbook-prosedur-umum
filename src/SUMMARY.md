@@ -5,6 +5,7 @@
 - [Finance & Accounting](./fa.md)
     - [Menerima Uang Di Bank](./fa/menerima-bank.md)
     - [Menerima Uang Di Kas](./fa/menerima-kas.md)
+    - [Mengeluarkan Uang Melalui Bank](./fa/mengeluarkan-bank.md)
 - [Inventory](./inventory.md)
     - [Meminta Barang Dari Gudang Lain](./inventory/create-pull-flow.md)
     - [Memproses Permintaan Barang Dari Gudang Lain](./inventory/memproses-interwarehouse-out-pull-flow.md)
