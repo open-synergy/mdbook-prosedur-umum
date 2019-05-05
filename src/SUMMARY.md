@@ -17,6 +17,8 @@
     - [Menerima Barang Dari Konsumen](./inventory/menerima-konsumen.md)
     - [Menerima Resupply Dari Gudang Lain](./inventory/menerima-resupply.md)
     - [Menerima Barang Dari Supplier](./inventory/menerima-supplier.md)
+        - [Menerima Barang Hasil Pembelian](./inventory/menerima-hasil-pembelian.md)
+        - [Menerima Barang Promosi](./inventory/menerima-promosi.md)
     - [Menerima Barang Dari Karyawan](./inventory/menerima-karyawan.md)
 - [Sales](./sales.md)
 - [Purchase](./purchase.md)
