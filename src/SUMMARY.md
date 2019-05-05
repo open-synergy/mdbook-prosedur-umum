@@ -15,6 +15,7 @@
     - [Menerima Barang](./inventory/menerima-barang.md)
         - [Menerima Barang Dari Pihak Ketiga Lainnya](./inventory/menerima-pihak-ketiga.md)
         - [Menerima Barang Dari Konsumen](./inventory/menerima-konsumen.md)
+            - [Menerima Barang Retur Penjualan](./inventory/menerima-retur-jual.md)
         - [Menerima Resupply Dari Gudang Lain](./inventory/menerima-resupply.md)
         - [Menerima Barang Dari Supplier](./inventory/menerima-supplier.md)
             - [Menerima Barang Hasil Pembelian](./inventory/menerima-hasil-pembelian.md)
