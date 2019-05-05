@@ -22,6 +22,7 @@
             - [Menerima Barang Promosi](./inventory/menerima-promosi.md)
             - [Menerima Barang Realisasi Retur Pembelian](./inventory/menerima-realisasi-retur-beli.md)
         - [Menerima Barang Dari Karyawan](./inventory/menerima-karyawan.md)
+    - [Memindahkan Barang Dari Antar Lokasi Di Gudang Yang Sama](./inventory/internal-transfer.md)
 - [Sales](./sales.md)
 - [Purchase](./purchase.md)
 - [Manufacture](./manufacture.md)
