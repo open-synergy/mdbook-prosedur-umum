@@ -17,10 +17,10 @@
     <node id="n0" yfiles.foldertype="group">
       <data key="d6">
         <y:TableNode configuration="com.yworks.bpmn.Pool">
-          <y:Geometry height="1741.1297393364903" width="778.3338268649196" x="85.91129032258061" y="-827.508590047393"/>
+          <y:Geometry height="1645.3571061611347" width="778.3338268649196" x="85.91129032258061" y="-827.508590047393"/>
           <y:Fill color="#FFF2BC" color2="#D4D4D4CC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.4609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="l" rotationAngle="270.0" textColor="#000000" verticalTextPosition="bottom" visible="true" width="92.35205078125" x="4.0" xml:space="preserve" y="824.3888442776201">Perusahaan</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.4609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="l" rotationAngle="270.0" textColor="#000000" verticalTextPosition="bottom" visible="true" width="92.35205078125" x="4.0" xml:space="preserve" y="776.5025276899423">Perusahaan</y:NodeLabel>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" rotationAngle="270.0" textColor="#000000" verticalTextPosition="bottom" visible="true" width="102.888671875" x="33.0" xml:space="preserve" y="113.07106690610169">Warehouse User<y:LabelModel><y:RowNodeLabelModel offset="3.0"/></y:LabelModel><y:ModelParameter><y:RowNodeLabelModelParameter horizontalPosition="0.0" id="row_0" inside="true"/></y:ModelParameter></y:NodeLabel>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" rotationAngle="270.0" textColor="#000000" verticalTextPosition="bottom" visible="true" width="71.72265625" x="33.0" xml:space="preserve" y="348.16681168542505">Warehouse
 Manager<y:LabelModel><y:RowNodeLabelModel offset="3.0"/></y:LabelModel><y:ModelParameter><y:RowNodeLabelModelParameter horizontalPosition="0.0" id="row_1" inside="true"/></y:ModelParameter></y:NodeLabel>
@@ -28,7 +28,7 @@ Manager<y:LabelModel><y:RowNodeLabelModel offset="3.0"/></y:LabelModel><y:ModelP
 User<y:LabelModel><y:RowNodeLabelModel offset="3.0"/></y:LabelModel><y:ModelParameter><y:RowNodeLabelModelParameter horizontalPosition="0.0" id="row_2" inside="true"/></y:ModelParameter></y:NodeLabel>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" rotationAngle="270.0" textColor="#000000" verticalTextPosition="bottom" visible="true" width="71.72265625" x="33.0" xml:space="preserve" y="644.175994149879">Warehouse
 Manager<y:LabelModel><y:RowNodeLabelModel offset="3.0"/></y:LabelModel><y:ModelParameter><y:RowNodeLabelModelParameter horizontalPosition="0.0" id="row_3" inside="true"/></y:ModelParameter></y:NodeLabel>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" rotationAngle="270.0" textColor="#000000" verticalTextPosition="bottom" visible="true" width="71.72265625" x="33.0" xml:space="preserve" y="1210.7778898844758">Warehouse
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" rotationAngle="270.0" textColor="#000000" verticalTextPosition="bottom" visible="true" width="71.72265625" x="33.0" xml:space="preserve" y="1162.8915732967982">Warehouse
 User<y:LabelModel><y:RowNodeLabelModel offset="3.0"/></y:LabelModel><y:ModelParameter><y:RowNodeLabelModelParameter horizontalPosition="0.0" id="row_4" inside="true"/></y:ModelParameter></y:NodeLabel>
           <y:StyleProperties>
             <y:Property name="y.view.tabular.TableNodePainter.ALTERNATE_ROW_STYLE">
@@ -53,7 +53,7 @@ User<y:LabelModel><y:RowNodeLabelModel offset="3.0"/></y:LabelModel><y:ModelPara
           </y:StyleProperties>
           <y:State autoResize="true" closed="false" closedHeight="80.0" closedWidth="100.0"/>
           <y:Insets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
-          <y:BorderInsets bottom="28" bottomF="28.183649289098412" left="172" leftF="171.8035534274194" right="4" rightF="4.021420505035962" top="27" topF="26.571090047394364"/>
+          <y:BorderInsets bottom="38" bottomF="37.91101611374256" left="172" leftF="171.8035534274194" right="4" rightF="4.021420505035962" top="27" topF="26.571090047394364"/>
           <y:Table autoResizeTable="true" defaultColumnWidth="360.0" defaultMinimumColumnWidth="30.0" defaultMinimumRowHeight="30.0" defaultRowHeight="107.0">
             <y:DefaultColumnInsets bottom="3.0" left="3.0" right="3.0" top="20.0"/>
             <y:DefaultRowInsets bottom="3.0" left="20.0" right="3.0" top="3.0"/>
@@ -76,7 +76,7 @@ User<y:LabelModel><y:RowNodeLabelModel offset="3.0"/></y:LabelModel><y:ModelPara
               <y:Row height="150.22274881516603" id="row_3" minimumHeight="30.0">
                 <y:Insets bottom="3.0" left="20.0" right="3.0" top="3.0"/>
               </y:Row>
-              <y:Row height="982.981042654028" id="row_4" minimumHeight="30.0">
+              <y:Row height="887.2084094786725" id="row_4" minimumHeight="30.0">
                 <y:Insets bottom="3.0" left="20.0" right="3.0" top="3.0"/>
               </y:Row>
             </y:Rows>
@@ -87,28 +87,10 @@ User<y:LabelModel><y:RowNodeLabelModel offset="3.0"/></y:LabelModel><y:ModelPara
         <node id="n0::n0">
           <data key="d6">
             <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
-              <y:Geometry height="30.0" width="30.0" x="438.0000000000001" y="710.9999999999991"/>
-              <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
-              <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="118.78515625" x="43.458858366935374" xml:space="preserve" y="-0.96875">Supplier Promotion
-Selesai Diproses<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="-0.5" labelRatioY="0.0" nodeRatioX="0.5" nodeRatioY="0.0" offsetX="13.458858366935374" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
-              <y:StyleProperties>
-                <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
-                <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_INTERMEDIATE_THROWING"/>
-                <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4cc"/>
-                <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffffe6"/>
-                <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_MESSAGE"/>
-              </y:StyleProperties>
-            </y:GenericNode>
-          </data>
-        </node>
-        <node id="n0::n1">
-          <data key="d6">
-            <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
-              <y:Geometry height="30.0" width="30.0" x="438.0" y="816.4999999999989"/>
+              <y:Geometry height="30.0" width="30.0" x="438.0" y="710.9999999999991"/>
               <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
               <y:BorderStyle color="#B11F1F" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="122.787109375" x="-46.3935546875" xml:space="preserve" y="34.0">Penerimaan Barang
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="118.78515625" x="-44.392578125" xml:space="preserve" y="34.0">Supplier Promotion
 Selesai Diproses<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="-0.5" nodeRatioX="0.0" nodeRatioY="0.5" offsetX="0.0" offsetY="4.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
               <y:StyleProperties>
                 <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
@@ -120,7 +102,7 @@ Selesai Diproses<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMo
             </y:GenericNode>
           </data>
         </node>
-        <node id="n0::n2">
+        <node id="n0::n1">
           <data key="d6">
             <y:GenericNode configuration="com.yworks.bpmn.Activity.withShadow">
               <y:Geometry height="83.0" width="120.0" x="393.0" y="235.49999999999977"/>
@@ -139,7 +121,7 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
             </y:GenericNode>
           </data>
         </node>
-        <node id="n0::n3">
+        <node id="n0::n2">
           <data key="d6">
             <y:GenericNode configuration="com.yworks.bpmn.Activity.withShadow">
               <y:Geometry height="83.0" width="120.0" x="393.0000000000001" y="393.99999999999955"/>
@@ -158,7 +140,7 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
             </y:GenericNode>
           </data>
         </node>
-        <node id="n0::n4">
+        <node id="n0::n3">
           <data key="d6">
             <y:GenericNode configuration="com.yworks.bpmn.Activity.withShadow">
               <y:Geometry height="83.0" width="120.0" x="393.00000000000006" y="552.4999999999993"/>
@@ -179,7 +161,7 @@ Pengantar<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:
             </y:GenericNode>
           </data>
         </node>
-        <node id="n0::n5">
+        <node id="n0::n4">
           <data key="d6">
             <y:GenericNode configuration="com.yworks.bpmn.Artifact.withShadow">
               <y:Geometry height="55.0" width="35.0" x="629.8548387096776" y="407.99999999999955"/>
@@ -197,7 +179,7 @@ Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:
             </y:GenericNode>
           </data>
         </node>
-        <node id="n0::n6">
+        <node id="n0::n5">
           <data key="d6">
             <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
               <y:Geometry height="30.0" width="30.0" x="438.0" y="-744.9999999999986"/>
@@ -206,8 +188,8 @@ Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="110.9453125" x="-40.47265625" xml:space="preserve" y="-35.9375">Menerima Barang
 Promosi<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.5" nodeRatioX="0.0" nodeRatioY="-0.5" offsetX="0.0" offsetY="-4.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
               <y:StyleProperties>
-                <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_INTERMEDIATE_THROWING"/>
                 <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+                <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_INTERMEDIATE_THROWING"/>
                 <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4cc"/>
                 <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffffe6"/>
                 <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_LINK"/>
@@ -215,7 +197,7 @@ Promosi<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Mo
             </y:GenericNode>
           </data>
         </node>
-        <node id="n0::n7">
+        <node id="n0::n6">
           <data key="d6">
             <y:GenericNode configuration="com.yworks.bpmn.Activity.withShadow">
               <y:Geometry height="83.0" width="120.0" x="393.0" y="-639.4999999999989"/>
@@ -234,7 +216,7 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
             </y:GenericNode>
           </data>
         </node>
-        <node id="n0::n8">
+        <node id="n0::n7">
           <data key="d6">
             <y:GenericNode configuration="com.yworks.bpmn.Activity.withShadow">
               <y:Geometry height="83.0" width="120.0" x="393.0" y="-480.9999999999991"/>
@@ -253,7 +235,7 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
             </y:GenericNode>
           </data>
         </node>
-        <node id="n0::n9">
+        <node id="n0::n8">
           <data key="d6">
             <y:GenericNode configuration="com.yworks.bpmn.Activity.withShadow">
               <y:Geometry height="83.0" width="120.0" x="393.0" y="-201.99999999999955"/>
@@ -272,8 +254,7 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
             </y:GenericNode>
           </data>
         </node>
-        <node id="n0::n10">
-          <data key="d5"/>
+        <node id="n0::n9">
           <data key="d6">
             <y:GenericNode configuration="com.yworks.bpmn.Gateway.withShadow">
               <y:Geometry height="45.0" width="45.0" x="430.5" y="-322.4999999999993"/>
@@ -290,7 +271,7 @@ Sudah Betul<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><
             </y:GenericNode>
           </data>
         </node>
-        <node id="n0::n11">
+        <node id="n0::n10">
           <data key="d6">
             <y:GenericNode configuration="com.yworks.bpmn.Activity.withShadow">
               <y:Geometry height="83.0" width="120.0" x="626.6218009478672" y="-341.4999999999993"/>
@@ -309,7 +290,7 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
             </y:GenericNode>
           </data>
         </node>
-        <node id="n0::n12">
+        <node id="n0::n11">
           <data key="d6">
             <y:GenericNode configuration="com.yworks.bpmn.Activity.withShadow">
               <y:Geometry height="83.0" width="120.0" x="393.0" y="-43.49999999999977"/>
@@ -328,8 +309,7 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
             </y:GenericNode>
           </data>
         </node>
-        <node id="n0::n13">
-          <data key="d5"/>
+        <node id="n0::n12">
           <data key="d6">
             <y:GenericNode configuration="com.yworks.bpmn.Gateway.withShadow">
               <y:Geometry height="45.0" width="45.0" x="430.5" y="115.0"/>
@@ -346,7 +326,7 @@ Sudah Betul<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><
             </y:GenericNode>
           </data>
         </node>
-        <node id="n0::n14">
+        <node id="n0::n13">
           <data key="d6">
             <y:GenericNode configuration="com.yworks.bpmn.Activity.withShadow">
               <y:Geometry height="83.0" width="120.0" x="626.6218009478672" y="96.0"/>
@@ -365,7 +345,7 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
             </y:GenericNode>
           </data>
         </node>
-        <node id="n0::n15">
+        <node id="n0::n14">
           <data key="d6">
             <y:GenericNode configuration="com.yworks.bpmn.Activity.withShadow">
               <y:Geometry height="83.0" width="120.0" x="626.6218009478672" y="-43.49999999999977"/>
@@ -384,8 +364,7 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
             </y:GenericNode>
           </data>
         </node>
-        <node id="n0::n16">
-          <data key="d5"/>
+        <node id="n0::n15">
           <data key="d6">
             <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
               <y:Geometry height="30.0" width="30.0" x="827.2236966824643" y="-314.9999999999993"/>
@@ -393,8 +372,8 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
               <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="eight_pos" modelPosition="n" textColor="#000000" verticalTextPosition="bottom" visible="true" width="12.208984375" x="8.8955078125" xml:space="preserve" y="-21.96875">A</y:NodeLabel>
               <y:StyleProperties>
-                <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_INTERMEDIATE_CATCHING"/>
                 <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+                <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_INTERMEDIATE_CATCHING"/>
                 <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4cc"/>
                 <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffffe6"/>
                 <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_LINK"/>
@@ -402,8 +381,7 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
             </y:GenericNode>
           </data>
         </node>
-        <node id="n0::n17">
-          <data key="d5"/>
+        <node id="n0::n16">
           <data key="d6">
             <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
               <y:Geometry height="30.0" width="30.0" x="671.6218009478672" y="-121.99952606634974"/>
@@ -411,8 +389,8 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
               <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="eight_pos" modelPosition="n" textColor="#000000" verticalTextPosition="bottom" visible="true" width="12.208984375" x="8.8955078125" xml:space="preserve" y="-21.96875">A</y:NodeLabel>
               <y:StyleProperties>
-                <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_INTERMEDIATE_THROWING"/>
                 <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+                <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_INTERMEDIATE_THROWING"/>
                 <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4cc"/>
                 <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffffe6"/>
                 <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_LINK"/>
@@ -422,7 +400,7 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
         </node>
       </graph>
     </node>
-    <edge id="n0::e0" source="n0::n3" target="n0::n4">
+    <edge id="n0::e0" source="n0::n2" target="n0::n3">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -432,7 +410,7 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::e1" source="n0::n3" target="n0::n5">
+    <edge id="n0::e1" source="n0::n2" target="n0::n4">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -442,7 +420,7 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::e2" source="n0::n4" target="n0::n0">
+    <edge id="n0::e2" source="n0::n5" target="n0::n6">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -453,7 +431,6 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
       </data>
     </edge>
     <edge id="n0::e3" source="n0::n6" target="n0::n7">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -463,19 +440,7 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::e4" source="n0::n7" target="n0::n8">
-      <data key="d9"/>
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="standard"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="n0::e5" source="n0::n10" target="n0::n9">
-      <data key="d9"/>
+    <edge id="n0::e4" source="n0::n9" target="n0::n8">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -486,8 +451,7 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::e6" source="n0::n8" target="n0::n10">
-      <data key="d9"/>
+    <edge id="n0::e5" source="n0::n7" target="n0::n9">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -497,8 +461,7 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::e7" source="n0::n10" target="n0::n11">
-      <data key="d9"/>
+    <edge id="n0::e6" source="n0::n9" target="n0::n10">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -509,8 +472,7 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::e8" source="n0::n11" target="n0::n8">
-      <data key="d9"/>
+    <edge id="n0::e7" source="n0::n10" target="n0::n7">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -522,8 +484,17 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::e9" source="n0::n9" target="n0::n12">
-      <data key="d9"/>
+    <edge id="n0::e8" source="n0::n8" target="n0::n11">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n0::e9" source="n0::n11" target="n0::n12">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -534,18 +505,6 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
       </data>
     </edge>
     <edge id="n0::e10" source="n0::n12" target="n0::n13">
-      <data key="d9"/>
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="standard"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="n0::e11" source="n0::n13" target="n0::n14">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -556,8 +515,7 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::e12" source="n0::n14" target="n0::n15">
-      <data key="d9"/>
+    <edge id="n0::e11" source="n0::n13" target="n0::n14">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -567,8 +525,7 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::e13" source="n0::n15" target="n0::n17">
-      <data key="d9"/>
+    <edge id="n0::e12" source="n0::n14" target="n0::n16">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -578,8 +535,7 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::e14" source="n0::n16" target="n0::n11">
-      <data key="d9"/>
+    <edge id="n0::e13" source="n0::n15" target="n0::n10">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -589,8 +545,7 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::e15" source="n0::n13" target="n0::n2">
-      <data key="d9"/>
+    <edge id="n0::e14" source="n0::n12" target="n0::n1">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -601,8 +556,7 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::e16" source="n0::n0" target="n0::n1">
-      <data key="d9"/>
+    <edge id="n0::e15" source="n0::n1" target="n0::n2">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -612,7 +566,7 @@ Supplier Promotion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="n0::e17" source="n0::n2" target="n0::n3">
+    <edge id="n0::e16" source="n0::n3" target="n0::n0">
       <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
