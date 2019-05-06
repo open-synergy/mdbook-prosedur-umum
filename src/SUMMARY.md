@@ -25,6 +25,7 @@
     - [Memindahkan Barang Dari Antar Lokasi Di Gudang Yang Sama](./inventory/internal-transfer.md)
     - [Menggunakan Barang Untuk Kebutuhan Internal](./inventory/konsumsi-internal.md)
     - [Membuang Barang](./inventory/consume.md)
+    - [Mencatat Barang Yang Hilang](./inventory/stolen.md)
 - [Sales](./sales.md)
 - [Purchase](./purchase.md)
 - [Manufacture](./manufacture.md)
