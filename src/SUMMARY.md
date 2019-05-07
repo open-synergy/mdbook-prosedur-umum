@@ -10,6 +10,7 @@
     - [Settlement Customer Invoice Dengan Uang Muka Penjualan](./fa/settlement-uang-muka-penjualan.md)
     - [Settlement Supplier Invoice Dengan Uang Muka Pembelian](./fa/settlement-uang-muka-pembelian.md)
 - [Inventory](./inventory.md)
+    - [Stok Opname](./inventory/stock-opname.md)
     - [Meminta Barang Dari Gudang Lain](./inventory/create-pull-flow.md)
     - [Memproses Permintaan Barang Dari Gudang Lain](./inventory/memproses-interwarehouse-out-pull-flow.md)
     - [Menerima Barang](./inventory/menerima-barang.md)
