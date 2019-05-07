@@ -1,8 +1,8 @@
-# Mencatat Barang Yang Dicuri
+# Mencatat Barang Yang Hilang
 
 ## <a name="input">A. INPUT</a>
 
-Ada barang yang dicuri
+Ada barang yang hilang
 
 ## <a name="role">B. ROLE YANG TERLIBAT</a>
 
@@ -12,6 +12,6 @@ Ada barang yang dicuri
 
 ## <a name="instruksi">C. INSTRUKSI KERJA</a>
 
-![](../img/mencatat-barang-dicuri.png)
+![](../img/mencatat-barang-hilang.png)
 
 ## <a name="output">D. OUTPUT</output>
