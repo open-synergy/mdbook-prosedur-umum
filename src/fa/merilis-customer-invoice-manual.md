@@ -1,8 +1,8 @@
 # Merilis Customer Invoice Secara Manual
 
-## <a name="input">A. INPUT</a>
+## <a name="input">A. START</a>
 
-Ada kebutuhan untuk merilis invoice secara manual
+* Condition: Ada kebutuhan untuk merilis invoice secara manual
 
 ## <a name="role">B. ROLE YANG TERLIBAT</a>
 
@@ -13,3 +13,7 @@ Ada kebutuhan untuk merilis invoice secara manual
 ## <a name="instruksi">C. INSTRUKSI KERJA</a>
 
 ![](../img/membuat-customer-invoice-manual.png)
+
+## <a name="input">D. END</a>
+
+*Tidak ada end event spesifik*
