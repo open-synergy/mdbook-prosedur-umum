@@ -5,6 +5,7 @@
 - [Finance & Accounting](./fa.md)
     - [Merilis Customer Invoice Secara Manual](./fa/merilis-customer-invoice-manual.md)
     - [Membatalkan Customer Invoice](./fa/membatalkan-customer-invoice.md)
+    - [Merevisi Customer Invoice](./fa/merevisi-customer-invoice.md)
     - [Menerima Uang Di Bank](./fa/menerima-bank.md)
     - [Menerima Uang Di Kas](./fa/menerima-kas.md)
     - [Mengeluarkan Uang Melalui Bank](./fa/mengeluarkan-bank.md)
