@@ -13,7 +13,3 @@
 ## <a name="instruksi">C. INSTRUKSI KERJA</a>
 
 ![](../img/merilis-customer-invoice.png)
-
-## <a name="input">D. END</a>
-
-*Tidak ada end event spesifik*
