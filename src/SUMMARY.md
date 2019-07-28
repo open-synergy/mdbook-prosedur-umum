@@ -8,6 +8,8 @@
         - [Membatalkan Customer Invoice](./fa/membatalkan-customer-invoice.md)
         - [Merevisi Customer Invoice](./fa/merevisi-customer-invoice.md)
         - [Settlement Customer Invoice Dengan Uang Muka Penjualan](./fa/settlement-uang-muka-penjualan.md)
+        - [Merevisi Settlement Customer Invoice Dengan Uang Muka Penjualan](./fa/merevisi-settlement-uang-muka-penjualan.md)
+        - [Membatalkan Settlement Customer Invoice Dengan Uang Muka Penjualan](./fa/membatalkan-settlement-uang-muka-penjualan.md)                 
     - [A/P](./fa/ap.md)
         - [Settlement Supplier Invoice Dengan Uang Muka Pembelian](./fa/settlement-uang-muka-pembelian.md)        
     - [Bank & Kas](./fa/bank-kas.md)

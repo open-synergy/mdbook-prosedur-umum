@@ -2,7 +2,7 @@
 
 ## <a name="input">A. INPUT</a>
 
-Ada konsumen yang memiliki customer invoice dan uang muka penjualan
+*Condition*: Ada konsumen yang memiliki customer invoice dan uang muka penjualan
 
 ## <a name="role">B. ROLE YANG TERLIBAT</a>
 
@@ -59,3 +59,5 @@ Ada konsumen yang memiliki customer invoice dan uang muka penjualan
 #### C.7.1 Instruksi Kerja Utama
 
 ## <a name="output">D. OUTPUT</output>
+
+*Message*: Sale Advance Settlement selesai diproses
