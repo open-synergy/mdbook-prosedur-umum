@@ -2,9 +2,11 @@
 
 ## <a name="input">A. INPUT</a>
 
-Ada customer invoice yang salah
+*Condition*: Ada customer invoice yang tidak jadi diterbitkan
 
 ## <a name="role">B. ROLE YANG TERLIBAT</a>
+
+* A/R
 
 ## <a name="instruksi">C. INSTRUKSI KERJA</a>
 
@@ -12,4 +14,4 @@ Ada customer invoice yang salah
 
 ## <a name="input">D. END</a>
 
-*Tidak ada end event spesifik*
+*Message*: Customer Invoice selesai dibatalkan

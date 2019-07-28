@@ -2,12 +2,13 @@
 
 ## <a name="input">A. INPUT</a>
 
-Ada kebutuhan untuk merevisi invoice
+*Condition*: Ada kebutuhan untuk merevisi invoice
 
 ## <a name="role">B. ROLE YANG TERLIBAT</a>
 
 * A/R
 * Customer Invoice Validator
+* Penandatangan Customer Invoice
 
 ## <a name="instruksi">C. INSTRUKSI KERJA</a>
 
@@ -15,4 +16,4 @@ Ada kebutuhan untuk merevisi invoice
 
 ## <a name="input">D. END</a>
 
-*Tidak ada end event spesifik*
+*Message*: Customer Invoice selesai diproses
