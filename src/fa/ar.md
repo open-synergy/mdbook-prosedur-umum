@@ -11,4 +11,7 @@
 - [Membatalkan Credit Note](./membatalkan-credit-note.md)
 - [Settlement Customer Invoice Dengan Credit Note](./settlement-credit-note.md)    
 - [Merevisi Settlement Customer Invoice Dengan Credit Note](./merevisi-settlement-credit-note.md)  
-- [Membatalkan Settlement Customer Invoice Dengan Credit Note](./membatalkan-settlement-credit-note.md)  
+- [Membatalkan Settlement Customer Invoice Dengan Credit Note](./membatalkan-settlement-credit-note.md)
+- [Settlement Customer Invoice Dengan Supplier Invoice](./settlement-invoice.md)  
+- [Merevisi Settlement Customer Invoice Dengan Supplier Invoice](./merevisi-settlement-invoice.md)    
+- [Membatalkan Settlement Customer Invoice Dengan Supplier Invoice](./membatalkan-settlement-invoice.md) 
