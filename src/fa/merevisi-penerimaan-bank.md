@@ -2,15 +2,16 @@
 
 ## <a name="input">A. START</a>
 
-* Condition: Ada kebutuhan untuk merevisi bank receipt
+*Condition*: Ada kebutuhan untuk merevisi Bank Receipt
 
 ## <a name="role">B. ROLE YANG TERLIBAT</a>
 
 * Bank Cashier
+* Bank Cashier Validator
 
 ## <a name="instruksi">C. INSTRUKSI KERJA</a>
 
-![](../img/revisi-bank-receipt.png)
+![](../img/merevisi-penerimaan-bank.png)
 
 ### C.1 Membatalkan Bank Receipt
 
@@ -38,4 +39,4 @@
 
 ## <a name="input">D. END</a>
 
-*Tidak ada end event spesifik*
+*Message*: Bank Receipt selesai diproses.

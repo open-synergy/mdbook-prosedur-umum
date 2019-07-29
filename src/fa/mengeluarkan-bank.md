@@ -2,7 +2,7 @@
 
 ## <a name="input">A. INPUT</a>
 
-Ada permintaan pembayaran
+*Condition*: Ada permintaan pembayaran
 
 ## <a name="role">B. ROLE YANG TERLIBAT</a>
 
@@ -59,3 +59,5 @@ Ada permintaan pembayaran
 #### C.7.1 Instruksi Kerja Utama
 
 ## <a name="output">D. OUTPUT</output>
+
+*Message*: Bank Payment selesai diproses

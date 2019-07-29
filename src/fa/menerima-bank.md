@@ -2,11 +2,12 @@
 
 ## <a name="input">A. INPUT</a>
 
-Ada notifikasi bahwa ada uang masuk ke bank.
+*Signal*: Statement bank/rekening koran menunjukan ada uang masuk
 
 ## <a name="role">B. ROLE YANG TERLIBAT</a>
 
 * Bank Cashier
+* Bank Cashier Validator
 
 ## <a name="instruksi">C. INSTRUKSI KERJA</a>
 
