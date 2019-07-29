@@ -3,11 +3,11 @@
 
 ## <a name="input">A. INPUT</a>
 
-Ada konsumen yang memiliki supplier invoice dan uang muka penjualan
+*Condition*: Ada supplier yang memiliki supplier invoice dan uang muka penjualan
 
 ## <a name="role">B. ROLE YANG TERLIBAT</a>
 
-* A/R
+* A/P
 * Purchase Advance Settlement Validator
 
 ## <a name="instruksi">C. INSTRUKSI KERJA</a>
@@ -60,3 +60,5 @@ Ada konsumen yang memiliki supplier invoice dan uang muka penjualan
 #### C.7.1 Instruksi Kerja Utama
 
 ## <a name="output">D. OUTPUT</output>
+
+*Message*: Purchase Advance Settlement selesai diproses
