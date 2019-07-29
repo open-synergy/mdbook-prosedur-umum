@@ -2,7 +2,7 @@
 
 ## <a name="input">A. INPUT</a>
 
-Uang diterima
+*Message*: Uang diterima
 
 ## <a name="role">B. ROLE YANG TERLIBAT</a>
 
@@ -59,3 +59,5 @@ Uang diterima
 #### C.7.1 Instruksi Kerja Utama
 
 ## <a name="output">D. OUTPUT</output>
+
+*Message*: Cash Receipt selesai diproses
