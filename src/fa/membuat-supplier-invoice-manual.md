@@ -2,7 +2,7 @@
 
 ## <a name="input">A. START</a>
 
-*Condition*: Ada supplier invoice diterima
+*Message*: Ada supplier invoice diterima
 
 ## <a name="role">B. ROLE YANG TERLIBAT</a>
 
