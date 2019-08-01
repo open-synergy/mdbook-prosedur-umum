@@ -11,4 +11,4 @@
 
 ## <a name="instruksi">C. INSTRUKSI KERJA</a>
 
-![](../img/memberikan-sanksi-karyawan.png)
+![](../../img/memberikan-sanksi-karyawan.png)

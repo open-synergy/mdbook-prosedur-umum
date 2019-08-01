@@ -1,14 +1,13 @@
-# Mengumpulkan Timesheet
+# Membuat Timesheet
 
 ## <a name="input">A. INPUT</a>
 
-* Timesheet Ditolak
-* H+1 Periode Absen
+Tiap H-1 periode absen
 
 ## <a name="role">B. ROLE YANG TERLIBAT</a>
 
-* All User
+* HR Attendance
 
 ## <a name="instruksi">C. INSTRUKSI KERJA</a>
 
-![](../img/submit-timesheet.png)
+![](../../img/membuat-timesheet-masal.png)

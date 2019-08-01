@@ -1,13 +1,14 @@
-# Menyetujui/Menolak Timesheet
+# Mengumpulkan Timesheet
 
 ## <a name="input">A. INPUT</a>
 
-* Permintaan Persetujuan Timesheet
+* Timesheet Ditolak
+* H+1 Periode Absen
 
 ## <a name="role">B. ROLE YANG TERLIBAT</a>
 
-* HR Attendance
+* All User
 
 ## <a name="instruksi">C. INSTRUKSI KERJA</a>
 
-![](../img/menyetujui-menolak-timesheet.png)
+![](../../img/submit-timesheet.png)

@@ -1,8 +1,8 @@
-# Membuat Timesheet
+# Menyetujui/Menolak Timesheet
 
 ## <a name="input">A. INPUT</a>
 
-Tiap H-1 periode absen
+* Permintaan Persetujuan Timesheet
 
 ## <a name="role">B. ROLE YANG TERLIBAT</a>
 
@@ -10,4 +10,4 @@ Tiap H-1 periode absen
 
 ## <a name="instruksi">C. INSTRUKSI KERJA</a>
 
-![](../img/membuat-timesheet-masal.png)
+![](../../img/menyetujui-menolak-timesheet.png)
