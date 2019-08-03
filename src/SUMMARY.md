@@ -68,5 +68,8 @@
         - [Memberikan Sanksi](./hr/career-administration/memberikan-sanksi.md)
     - [Attendance](./hr/attendance.md)
         - [Membuat Timesheet](./hr/attendance/membuat-timesheet-masal.md)
+        - [Mengimport Absensi](./hr/attendance/mengimport-data-absen.md)
         - [Mengumpulkan Timesheet](./hr/attendance/mengumpulkan-timesheet.md)
         - [Menyetujui/Menolak Timesheet](./hr/attendance/menyetujui-menolak-timesheet.md)
+        - [Membuat Overtime Request](./hr/attendance/membuat-overtime-request.md)
+        - [Merevisi Overtime Request](./hr/attendance/merevisi-overtime-request.md)
