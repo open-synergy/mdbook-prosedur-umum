@@ -73,3 +73,5 @@
         - [Menyetujui/Menolak Timesheet](./hr/attendance/menyetujui-menolak-timesheet.md)
         - [Membuat Overtime Request](./hr/attendance/membuat-overtime-request.md)
         - [Merevisi Overtime Request](./hr/attendance/merevisi-overtime-request.md)
+        - [Membuat Leave Request](./hr/attendance/membuat-leave-request.md)
+        - [Merevisi Leave Request](./hr/attendance/merevisi-leave-request.md)
