@@ -2,7 +2,7 @@
 
 ## <a name="input">A. INPUT</a>
 
-Tiap H-1 periode absen
+*Time*: H-1 Periode Absen
 
 ## <a name="role">B. ROLE YANG TERLIBAT</a>
 
@@ -11,3 +11,7 @@ Tiap H-1 periode absen
 ## <a name="instruksi">C. INSTRUKSI KERJA</a>
 
 ![](../../img/membuat-timesheet-masal.png)
+
+## <a name="output">D. OUTPUT</a>
+
+*Tidak ada end event yang spesifik*
