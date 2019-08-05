@@ -71,7 +71,6 @@
         - [Membuat Timesheet](./hr/attendance/membuat-timesheet-masal.md)
         - [Mengimport Absensi](./hr/attendance/mengimport-data-absen.md)
         - [Memproses Timesheet](./hr/attendance/mengumpulkan-timesheet.md)
-        - [Menyetujui/Menolak Timesheet](./hr/attendance/menyetujui-menolak-timesheet.md)
         - [Membuat Overtime Request](./hr/attendance/membuat-overtime-request.md)
         - [Merevisi Overtime Request](./hr/attendance/merevisi-overtime-request.md)
         - [Membuat Leave Request](./hr/attendance/membuat-leave-request.md)
