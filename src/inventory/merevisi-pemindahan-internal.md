@@ -1,8 +1,8 @@
-# Memindahkan Barang Dari Antar Lokasi Di Gudang Yang Sama
+# Merevisi Pemindahan Internal
 
 ## <a name="input">A. INPUT</a>
 
-* *Condition*: Ada barang yang akan dipindahkan ke lokasi lain di gudang yang sama
+* *Condition*: Ada kebutuhan untuk merevisi internal transfer dengan status cancel
 
 ## <a name="role">B. ROLE YANG TERLIBAT</a>
 
@@ -12,7 +12,7 @@
 
 ## <a name="prosedur">C. PROSEDUR KERJA</a>
 
-![](../img/memindahkan-barang-di-gudang-yang-sama.png)
+![](../img/merevisi-pemindahan-internal.png)
 
 ## <a name="output">D. OUTPUT</output>
 
