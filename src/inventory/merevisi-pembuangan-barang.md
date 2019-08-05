@@ -1,8 +1,8 @@
-# Membuang Barang
+# Merevisi Pembuangan Barang
 
 ## <a name="input">A. INPUT</a>
 
-* *Condition*: Ada barang yang akan dibuang
+* *Condition*: Ada kebutuhan untuk merevisi waste dengan status **Cancel**
 
 ## <a name="role">B. ROLE YANG TERLIBAT</a>
 
@@ -11,7 +11,7 @@
 
 ## <a name="prosedur">C. PROSEDUR KERJA</a>
 
-![](../img/membuang-barang.png)
+![](../img/merevisi-pembuangan-barang.png)
 
 ## <a name="output">D. OUTPUT</output>
 
