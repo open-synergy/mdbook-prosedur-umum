@@ -59,6 +59,7 @@
     - [Menggunakan Barang Untuk Kebutuhan Internal](./inventory/konsumsi-internal.md)
     - [Membuang Barang](./inventory/consume.md)
     - [Mencatat Barang Yang Hilang](./inventory/missing.md)
+    - [Merevisi Pencatatan Barang Yang Hilang](./inventory/merevisi-missing.md)
     - [Mencatat Barang Yang Dicuri](./inventory/stolen.md)
     - [Merevisi Pencatatan Barang Yang Dicuri](./inventory/merevisi-stolen.md)
 - [Sales](./sales.md)
