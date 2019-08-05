@@ -57,6 +57,7 @@
         - [Menerima Barang Dari Karyawan](./inventory/menerima-karyawan.md)
     - [Memindahkan Barang Dari Antar Lokasi Di Gudang Yang Sama](./inventory/internal-transfer.md)
     - [Menggunakan Barang Untuk Kebutuhan Internal](./inventory/konsumsi-internal.md)
+    - [Merevisi Penggunaan Internal Barang](./inventory/merevisi-konsumsi-internal.md)
     - [Membuang Barang](./inventory/consume.md)
     - [Merevisi Pembuangan Barang](./inventory/merevisi-pembuangan-barang.md)
     - [Mencatat Barang Yang Hilang](./inventory/missing.md)

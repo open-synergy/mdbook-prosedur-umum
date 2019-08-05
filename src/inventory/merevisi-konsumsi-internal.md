@@ -1,8 +1,8 @@
-# Menggunakan Barang Untuk Kebutuhan Internal
+# Merevisi Penggunaan Internal Barang
 
 ## <a name="input">A. INPUT</a>
 
-* *Condition*: Ada barang yang akan digunakan untuk keperluan internal
+* *Condition*: Ada kebutuhan untuk merevisi consume dengan status cancel
 
 ## <a name="role">B. ROLE YANG TERLIBAT</a>
 
@@ -11,7 +11,7 @@
 
 ## <a name="prosedur">C. PROSEDUR KERJA</a>
 
-![](../img/menggunakan-barang-konsumsi-internal.png)
+![](../img/merevisi-penggunaan-internal-barang.png)
 
 ## <a name="output">D. OUTPUT</output>
 
