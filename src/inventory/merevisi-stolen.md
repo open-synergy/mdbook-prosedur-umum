@@ -1,8 +1,8 @@
-# Mencatat Barang Yang Dicuri
+# Merevisi Pencatatan Barang Yang Dicuri
 
 ## <a name="input">A. INPUT</a>
 
-* *Condition*: Ada barang yang dicuri
+* *Condition*: Ada kebutuhan untuk merevisi stolen dengan status **Cancel**
 
 ## <a name="role">B. ROLE YANG TERLIBAT</a>
 
@@ -11,7 +11,7 @@
 
 ## <a name="prosedur">C. PROSEDUR KERJA</a>
 
-![](../img/mencatat-barang-dicuri.png)
+![](../img/merevisi-barang-dicuri.png)
 
 ## <a name="output">D. OUTPUT</output>
 

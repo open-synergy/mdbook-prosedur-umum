@@ -60,6 +60,7 @@
     - [Membuang Barang](./inventory/consume.md)
     - [Mencatat Barang Yang Hilang](./inventory/missing.md)
     - [Mencatat Barang Yang Dicuri](./inventory/stolen.md)
+    - [Merevisi Pencatatan Barang Yang Dicuri](./inventory/merevisi-stolen.md)
 - [Sales](./sales.md)
 - [Purchase](./purchase.md)
 - [Manufacture](./manufacture.md)
