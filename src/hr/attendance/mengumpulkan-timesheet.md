@@ -1,14 +1,13 @@
-# Mengumpulkan Timesheet
+# Memproses Timesheet
 
 ## <a name="input">A. INPUT</a>
 
-* *Message*: Notifikasi **Timesheet Ditolak**, atau
-* *Time*: H+1 Periode Absen, atau
-* *Condition*: Dashboard **My Timesheet: Need To Submitted != 0** 
+* *Signal*: Notifikasi **Timesheet Dibuat**
 
 ## <a name="role">B. ROLE YANG TERLIBAT</a>
 
 * All User
+* Timesheet Validator
 
 ## <a name="instruksi">C. INSTRUKSI KERJA</a>
 
@@ -16,4 +15,5 @@
 
 ## <a name="output">D. OUTPUT</a>
 
-* *Message*: Notifikasi **Permintaan Persetujuan Timesheet**
+* *Signal*: Notifikasi **Timesheet Disetujui**, atau
+* *Signal*: Notifikasi **Timesheet Ditolak**

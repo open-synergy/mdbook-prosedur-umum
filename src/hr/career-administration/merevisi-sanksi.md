@@ -1,8 +1,8 @@
-# Memberikan Sanksi
+# Merevisi Employee Dicipline
 
 ## <a name="input">A. START EVENT</a>
 
-* *Condition*: Ada karyawan yang terbukti melakukan pelanggaran
+* *Condition*: Ada
 
 ## <a name="role">B. ROLE YANG TERLIBAT</a>
 
@@ -12,7 +12,7 @@
 
 ## <a name="instruksi">C. INSTRUKSI KERJA</a>
 
-![](../../img/memberikan-sanksi-karyawan.png)
+![](../../img/merevisi-sanksi-karyawan.png)
 
 ## <a name="output">D. OUTPUT</a>
 
