@@ -76,3 +76,8 @@
         - [Merevisi Overtime Request](./hr/attendance/merevisi-overtime-request.md)
         - [Membuat Leave Request](./hr/attendance/membuat-leave-request.md)
         - [Merevisi Leave Request](./hr/attendance/merevisi-leave-request.md)
+    - [Payslip](./hr/payslip.md)
+        - [Membuat Payslip Batch](./hr/payslip/membuat-payslip-batch.md)
+        - [Memproses Payslip](./hr/payslip/memproses-payslip.md)
+        - [Membatalkan Payslip](./hr/payslip/membatalkan-payslip.md)
+        - [Merevisi Payslip](./hr/payslip/merevisi-payslip.md)
