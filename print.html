@@ -1,0 +1,1441 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Odoo - Prosedur Umum</title>
+        
+        <meta name="robots" content="noindex" />
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="prakata.html">Pra-kata</a></li><li class="affix"><a href="terminologi.html">Terminologi</a></li><li><a href="fa.html"><strong aria-hidden="true">1.</strong> Finance &amp; Accounting</a></li><li><ol class="section"><li><a href="fa/ar.html"><strong aria-hidden="true">1.1.</strong> A/R</a></li><li><ol class="section"><li><a href="fa/merilis-customer-invoice-manual.html"><strong aria-hidden="true">1.1.1.</strong> Merilis Customer Invoice Secara Manual</a></li><li><a href="fa/membatalkan-customer-invoice.html"><strong aria-hidden="true">1.1.2.</strong> Membatalkan Customer Invoice</a></li><li><a href="fa/merevisi-customer-invoice.html"><strong aria-hidden="true">1.1.3.</strong> Merevisi Customer Invoice</a></li><li><a href="fa/settlement-uang-muka-penjualan.html"><strong aria-hidden="true">1.1.4.</strong> Settlement Customer Invoice Dengan Uang Muka Penjualan</a></li><li><a href="fa/merevisi-settlement-uang-muka-penjualan.html"><strong aria-hidden="true">1.1.5.</strong> Merevisi Settlement Customer Invoice Dengan Uang Muka Penjualan</a></li><li><a href="fa/membatalkan-settlement-uang-muka-penjualan.html"><strong aria-hidden="true">1.1.6.</strong> Membatalkan Settlement Customer Invoice Dengan Uang Muka Penjualan</a></li><li><a href="fa/membuat-credit-note-manual.html"><strong aria-hidden="true">1.1.7.</strong> Merilis Credit Note Secara Manual</a></li><li><a href="fa/merevisi-credit-note.html"><strong aria-hidden="true">1.1.8.</strong> Merevisi Credit Note</a></li><li><a href="fa/membatalkan-credit-note.html"><strong aria-hidden="true">1.1.9.</strong> Membatalkan Credit Note</a></li><li><a href="fa/settlement-credit-note.html"><strong aria-hidden="true">1.1.10.</strong> Settlement Customer Invoice Dengan Credit Note</a></li><li><a href="fa/merevisi-settlement-credit-note.html"><strong aria-hidden="true">1.1.11.</strong> Merevisi Settlement Customer Invoice Dengan Credit Note</a></li><li><a href="fa/membatalkan-settlement-credit-note.html"><strong aria-hidden="true">1.1.12.</strong> Membatalkan Settlement Customer Invoice Dengan Credit Note</a></li><li><a href="fa/settlement-invoice.html"><strong aria-hidden="true">1.1.13.</strong> Settlement Customer Invoice Dengan Supplier Invoice</a></li><li><a href="fa/merevisi-settlement-invoice.html"><strong aria-hidden="true">1.1.14.</strong> Merevisi Settlement Customer Invoice Dengan Supplier Invoice</a></li><li><a href="fa/membatalkan-settlement-invoice.html"><strong aria-hidden="true">1.1.15.</strong> Membatalkan Settlement Customer Invoice Dengan Supplier Invoice</a></li></ol></li><li><a href="fa/ap.html"><strong aria-hidden="true">1.2.</strong> A/P</a></li><li><ol class="section"><li><a href="fa/membuat-supplier-invoice-manual.html"><strong aria-hidden="true">1.2.1.</strong> Menerima Supplier Invoice Secara Manual</a></li><li><a href="fa/merevisi-supplier-invoice.html"><strong aria-hidden="true">1.2.2.</strong> Merevisi Supplier Invoice</a></li><li><a href="fa/membatalkan-supplier-invoice.html"><strong aria-hidden="true">1.2.3.</strong> Membatalkan Supplier Invoice</a></li><li><a href="fa/settlement-uang-muka-pembelian.html"><strong aria-hidden="true">1.2.4.</strong> Settlement Supplier Invoice Dengan Uang Muka Pembelian</a></li><li><a href="fa/merevisi-settlement-uang-muka-pembelian.html"><strong aria-hidden="true">1.2.5.</strong> Merevisi Settlement Supplier Invoice Dengan Uang Muka Pembelian</a></li><li><a href="fa/membatalkan-settlement-uang-muka-pembelian.html"><strong aria-hidden="true">1.2.6.</strong> Membatalkan Settlement Supplier Invoice Dengan Uang Muka Pembelian</a></li><li><a href="fa/membuat-debit-note-manual.html"><strong aria-hidden="true">1.2.7.</strong> Menerima Debit Note Secara Manual</a></li><li><a href="fa/merevisi-debit-note.html"><strong aria-hidden="true">1.2.8.</strong> Merevisi Debit Note</a></li><li><a href="fa/membatalkan-debit-note.html"><strong aria-hidden="true">1.2.9.</strong> Membatalkan Debit Note</a></li><li><a href="fa/settlement-debit-note.html"><strong aria-hidden="true">1.2.10.</strong> Settlement Supplier Invoice Dengan Debit Note</a></li><li><a href="fa/merevisi-settlement-debit-note.html"><strong aria-hidden="true">1.2.11.</strong> Merevisi Settlement Supplier Invoice Dengan Debit Note</a></li><li><a href="fa/membatalkan-settlement-debit-note.html"><strong aria-hidden="true">1.2.12.</strong> Membatalkan Settlement Supplier Invoice Dengan Debit Note</a></li></ol></li><li><a href="fa/bank-kas.html"><strong aria-hidden="true">1.3.</strong> Bank &amp; Kas</a></li><li><ol class="section"><li><a href="fa/menerima-bank.html"><strong aria-hidden="true">1.3.1.</strong> Menerima Uang Di Bank</a></li><li><a href="fa/merevisi-penerimaan-bank.html"><strong aria-hidden="true">1.3.2.</strong> Merevisi Penerimaan Bank</a></li><li><a href="fa/menerima-kas.html"><strong aria-hidden="true">1.3.3.</strong> Menerima Uang Di Kas</a></li><li><a href="fa/revisi-penerimaan-kas.html"><strong aria-hidden="true">1.3.4.</strong> Merevisi Penerimaan Kas</a></li><li><a href="fa/mengeluarkan-bank.html"><strong aria-hidden="true">1.3.5.</strong> Mengeluarkan Uang Melalui Bank</a></li><li><a href="fa/merevisi-pengeluaran-bank.html"><strong aria-hidden="true">1.3.6.</strong> Merevisi Pengeluaran Bank</a></li><li><a href="fa/mengeluarkan-kas.html"><strong aria-hidden="true">1.3.7.</strong> Mengeluarkan Uang Melalui Kas</a></li><li><a href="fa/merevisi-pengeluaran-kas.html"><strong aria-hidden="true">1.3.8.</strong> Merevisi Pengeluaran Kas</a></li></ol></li></ol></li><li><a href="inventory.html"><strong aria-hidden="true">2.</strong> Inventory</a></li><li><ol class="section"><li><a href="inventory/stock-opname.html"><strong aria-hidden="true">2.1.</strong> Stok Opname</a></li><li><a href="inventory/create-pull-flow.html"><strong aria-hidden="true">2.2.</strong> Meminta Barang Dari Gudang Lain</a></li><li><a href="inventory/memproses-interwarehouse-out-pull-flow.html"><strong aria-hidden="true">2.3.</strong> Memproses Permintaan Barang Dari Gudang Lain</a></li><li><a href="inventory/menerima-barang.html"><strong aria-hidden="true">2.4.</strong> Menerima Barang</a></li><li><ol class="section"><li><a href="inventory/menerima-pihak-ketiga.html"><strong aria-hidden="true">2.4.1.</strong> Menerima Barang Dari Pihak Ketiga Lainnya</a></li><li><a href="inventory/menerima-konsumen.html"><strong aria-hidden="true">2.4.2.</strong> Menerima Barang Dari Konsumen</a></li><li><ol class="section"><li><a href="inventory/menerima-retur-jual.html"><strong aria-hidden="true">2.4.2.1.</strong> Menerima Barang Retur Penjualan</a></li></ol></li><li><a href="inventory/menerima-resupply.html"><strong aria-hidden="true">2.4.3.</strong> Menerima Resupply Dari Gudang Lain</a></li><li><a href="inventory/menerima-supplier.html"><strong aria-hidden="true">2.4.4.</strong> Menerima Barang Dari Supplier</a></li><li><ol class="section"><li><a href="inventory/menerima-hasil-pembelian.html"><strong aria-hidden="true">2.4.4.1.</strong> Menerima Barang Hasil Pembelian</a></li><li><a href="inventory/menerima-promosi.html"><strong aria-hidden="true">2.4.4.2.</strong> Menerima Barang Promosi</a></li><li><a href="inventory/menerima-realisasi-retur-beli.html"><strong aria-hidden="true">2.4.4.3.</strong> Menerima Barang Realisasi Retur Pembelian</a></li></ol></li><li><a href="inventory/menerima-karyawan.html"><strong aria-hidden="true">2.4.5.</strong> Menerima Barang Dari Karyawan</a></li></ol></li><li><a href="inventory/internal-movement.html"><strong aria-hidden="true">2.5.</strong> Internal Movement</a></li><li><ol class="section"><li><a href="inventory/internal-transfer.html"><strong aria-hidden="true">2.5.1.</strong> Memindahkan Barang Dari Antar Lokasi Di Gudang Yang Sama</a></li><li><a href="inventory/merevisi-pemindahan-internal.html"><strong aria-hidden="true">2.5.2.</strong> Merevisi Pemindahan Internal</a></li><li><a href="inventory/konsumsi-internal.html"><strong aria-hidden="true">2.5.3.</strong> Menggunakan Barang Untuk Kebutuhan Internal</a></li><li><a href="inventory/merevisi-konsumsi-internal.html"><strong aria-hidden="true">2.5.4.</strong> Merevisi Penggunaan Internal Barang</a></li><li><a href="inventory/consume.html"><strong aria-hidden="true">2.5.5.</strong> Membuang Barang</a></li><li><a href="inventory/merevisi-pembuangan-barang.html"><strong aria-hidden="true">2.5.6.</strong> Merevisi Pembuangan Barang</a></li><li><a href="inventory/missing.html"><strong aria-hidden="true">2.5.7.</strong> Mencatat Barang Yang Hilang</a></li><li><a href="inventory/merevisi-missing.html"><strong aria-hidden="true">2.5.8.</strong> Merevisi Pencatatan Barang Yang Hilang</a></li><li><a href="inventory/stolen.html"><strong aria-hidden="true">2.5.9.</strong> Mencatat Barang Yang Dicuri</a></li><li><a href="inventory/merevisi-stolen.html"><strong aria-hidden="true">2.5.10.</strong> Merevisi Pencatatan Barang Yang Dicuri</a></li></ol></li><li><a href="inventory/outgoing-movement.html"><strong aria-hidden="true">2.6.</strong> Outgoing Movement</a></li><li><ol class="section"><li><a href="inventory/outgoing-movement/membuat-customer-promotion.html"><strong aria-hidden="true">2.6.1.</strong> Memberikan Barang Untuk Promosi</a></li><li><a href="inventory/outgoing-movement/merevisi-customer-promotion.html"><strong aria-hidden="true">2.6.2.</strong> Merevisi Pemberian Barang Untuk Promosi</a></li><li><a href="inventory/outgoing-movement/memproses-rma-customer-out.html"><strong aria-hidden="true">2.6.3.</strong> Mengeluarkan Barang Untuk Realisasi Customer RMA</a></li><li><a href="inventory/outgoing-movement/memproses-rma-supplier-out.html"><strong aria-hidden="true">2.6.4.</strong> Mengeluarkan Barang Untuk Supplier RMA</a></li><li><a href="inventory/outgoing-movement/memproses-delivery-order.html"><strong aria-hidden="true">2.6.5.</strong> Mengeluarkan Barang Untuk Dijual Ke Konsumen</a></li></ol></li></ol></li><li><a href="sales.html"><strong aria-hidden="true">3.</strong> Sales</a></li><li><a href="purchase.html"><strong aria-hidden="true">4.</strong> Purchase</a></li><li><a href="manufacture.html"><strong aria-hidden="true">5.</strong> Manufacture</a></li><li><a href="hr.html"><strong aria-hidden="true">6.</strong> Human Resource</a></li><li><ol class="section"><li><a href="hr/career-administration.html"><strong aria-hidden="true">6.1.</strong> Career Administration</a></li><li><ol class="section"><li><a href="hr/career-administration/memberikan-sanksi.html"><strong aria-hidden="true">6.1.1.</strong> Memberikan Sanksi</a></li><li><a href="hr/career-administration/merevisi-sanksi.html"><strong aria-hidden="true">6.1.2.</strong> Merevisi Employee Dicipline</a></li></ol></li><li><a href="hr/attendance.html"><strong aria-hidden="true">6.2.</strong> Attendance</a></li><li><ol class="section"><li><a href="hr/attendance/membuat-timesheet-masal.html"><strong aria-hidden="true">6.2.1.</strong> Membuat Timesheet</a></li><li><a href="hr/attendance/mengimport-data-absen.html"><strong aria-hidden="true">6.2.2.</strong> Mengimport Absensi</a></li><li><a href="hr/attendance/mengumpulkan-timesheet.html"><strong aria-hidden="true">6.2.3.</strong> Memproses Timesheet</a></li><li><a href="hr/attendance/merevisi-timesheet.html"><strong aria-hidden="true">6.2.4.</strong> Merevisi Timesheet</a></li><li><a href="hr/attendance/membuat-overtime-request.html"><strong aria-hidden="true">6.2.5.</strong> Membuat Overtime Request</a></li><li><a href="hr/attendance/merevisi-overtime-request.html"><strong aria-hidden="true">6.2.6.</strong> Merevisi Overtime Request</a></li><li><a href="hr/attendance/membuat-leave-request.html"><strong aria-hidden="true">6.2.7.</strong> Membuat Leave Request</a></li><li><a href="hr/attendance/merevisi-leave-request.html"><strong aria-hidden="true">6.2.8.</strong> Merevisi Leave Request</a></li></ol></li><li><a href="hr/payslip.html"><strong aria-hidden="true">6.3.</strong> Payslip</a></li><li><ol class="section"><li><a href="hr/payslip/membuat-payslip-batch.html"><strong aria-hidden="true">6.3.1.</strong> Membuat Payslip Batch</a></li><li><a href="hr/payslip/memproses-payslip.html"><strong aria-hidden="true">6.3.2.</strong> Memproses Payslip</a></li><li><a href="hr/payslip/membatalkan-payslip.html"><strong aria-hidden="true">6.3.3.</strong> Membatalkan Payslip</a></li><li><a href="hr/payslip/merevisi-payslip.html"><strong aria-hidden="true">6.3.4.</strong> Merevisi Payslip</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Odoo - Prosedur Umum</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#pra-kata" id="pra-kata">Pra-kata</a></h1>
+<h1><a class="header" href="#terminologi" id="terminologi">Terminologi</a></h1>
+<h1><a class="header" href="#finance--accounting" id="finance--accounting">Finance &amp; Accounting</a></h1>
+<h1><a class="header" href="#ar" id="ar">A/R</a></h1>
+<ul>
+<li><a href="fa/./merilis-customer-invoice-manual.html">Merilis Customer Invoice Secara Manual</a></li>
+<li><a href="fa/./membatalkan-customer-invoice.html">Membatalkan Customer Invoice</a></li>
+<li><a href="fa/./merevisi-customer-invoice.html">Merevisi Customer Invoice</a></li>
+<li><a href="fa/./settlement-uang-muka-penjualan.html">Settlement Customer Invoice Dengan Uang Muka Penjualan</a></li>
+<li><a href="fa/./merevisi-settlement-uang-muka-penjualan.html">Merevisi Settlement Customer Invoice Dengan Uang Muka Penjualan</a></li>
+<li><a href="fa/./membatalkan-settlement-uang-muka-penjualan.html">Membatalkan Settlement Customer Invoice Dengan Uang Muka Penjualan</a></li>
+<li><a href="fa/./membuat-credit-note-manual.html">Merilis Credit Note Secara Manual</a></li>
+<li><a href="fa/./merevisi-credit-note.html">Merevisi Credit Note</a></li>
+<li><a href="fa/./membatalkan-credit-note.html">Membatalkan Credit Note</a></li>
+<li><a href="fa/./settlement-credit-note.html">Settlement Customer Invoice Dengan Credit Note</a></li>
+<li><a href="fa/./merevisi-settlement-credit-note.html">Merevisi Settlement Customer Invoice Dengan Credit Note</a></li>
+<li><a href="fa/./membatalkan-settlement-credit-note.html">Membatalkan Settlement Customer Invoice Dengan Credit Note</a></li>
+<li><a href="fa/./settlement-invoice.html">Settlement Customer Invoice Dengan Supplier Invoice</a></li>
+<li><a href="fa/./merevisi-settlement-invoice.html">Merevisi Settlement Customer Invoice Dengan Supplier Invoice</a></li>
+<li><a href="fa/./membatalkan-settlement-invoice.html">Membatalkan Settlement Customer Invoice Dengan Supplier Invoice</a> </li>
+</ul>
+<h1><a class="header" href="#merilis-customer-invoice-secara-manual" id="merilis-customer-invoice-secara-manual">Merilis Customer Invoice Secara Manual</a></h1>
+<h2><a class="header" href="#a-nameinputa-starta" id="a-nameinputa-starta"><a name="input">A. START</a></a></h2>
+<ul>
+<li>Condition: Ada kebutuhan untuk merilis invoice secara manual</li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata" id="a-nameroleb-role-yang-terlibata"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/R</li>
+<li>Customer Invoice Validator</li>
+<li>Penandatangan Invoice</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa" id="a-nameinstruksic-instruksi-kerjaa"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/membuat-customer-invoice-manual.png" alt="" /></p>
+<h2><a class="header" href="#a-nameinputd-enda" id="a-nameinputd-enda"><a name="input">D. END</a></a></h2>
+<p><em>Tidak ada end event spesifik</em></p>
+<h1><a class="header" href="#membatalkan-customer-invoice" id="membatalkan-customer-invoice">Membatalkan Customer Invoice</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa" id="a-nameinputa-inputa"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada customer invoice yang tidak jadi diterbitkan</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-1" id="a-nameroleb-role-yang-terlibata-1"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/R</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-1" id="a-nameinstruksic-instruksi-kerjaa-1"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/membatalkan-customer-invoice.png" alt="" /></p>
+<h2><a class="header" href="#a-nameinputd-enda-1" id="a-nameinputd-enda-1"><a name="input">D. END</a></a></h2>
+<p><em>Message</em>: Customer Invoice selesai dibatalkan</p>
+<h1><a class="header" href="#merevisi-customer-invoice" id="merevisi-customer-invoice">Merevisi Customer Invoice</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-1" id="a-nameinputa-inputa-1"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada kebutuhan untuk merevisi invoice</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-2" id="a-nameroleb-role-yang-terlibata-2"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/R</li>
+<li>Customer Invoice Validator</li>
+<li>Penandatangan Customer Invoice</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-2" id="a-nameinstruksic-instruksi-kerjaa-2"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/merevisi-customer-invoice.png" alt="" /></p>
+<h2><a class="header" href="#a-nameinputd-enda-2" id="a-nameinputd-enda-2"><a name="input">D. END</a></a></h2>
+<p><em>Message</em>: Customer Invoice selesai diproses</p>
+<h1><a class="header" href="#settlement-customer-invoice-dengan-uang-muka-penjualan" id="settlement-customer-invoice-dengan-uang-muka-penjualan">Settlement Customer Invoice Dengan Uang Muka Penjualan</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-2" id="a-nameinputa-inputa-2"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada konsumen yang memiliki customer invoice dan uang muka penjualan</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-3" id="a-nameroleb-role-yang-terlibata-3"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/R</li>
+<li>Sale Advance Settlement Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-3" id="a-nameinstruksic-instruksi-kerjaa-3"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/settlement-uang-muka-penjualan.png" alt="" /></p>
+<h3><a class="header" href="#c1-membuat-sale-advance-settlement" id="c1-membuat-sale-advance-settlement">C.1 Membuat Sale Advance Settlement</a></h3>
+<h4><a class="header" href="#c11-instruksi-kerja-utama" id="c11-instruksi-kerja-utama">C.1.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/sale-advance-settlement/membuat.html">Odoo - Finance &amp; Accounting: 2.14.2</a></p>
+<h4><a class="header" href="#c12-sub-instruksi-kerja" id="c12-sub-instruksi-kerja">C.1.2 Sub Instruksi Kerja</a></h4>
+<ul>
+<li><a href="https://open-synergy.github.io/mdbook-fa/transaksi/sale-advance-settlement/membuat-detail-import.html">Odoo - Finance &amp; Accounting: 2.14.2.1.1</a></li>
+<li><a href="https://open-synergy.github.io/mdbook-fa/transaksi/sale-advance-settlement/membuat-detail-manual.html">Odoo - Finance &amp; Accounting: 2.14.2.1.2</a></li>
+</ul>
+<h3><a class="header" href="#c2-mengkonfirmasi-sale-advance-settlement" id="c2-mengkonfirmasi-sale-advance-settlement">C.2 Mengkonfirmasi Sale Advance Settlement</a></h3>
+<h4><a class="header" href="#c21-instruksi-kerja-utama" id="c21-instruksi-kerja-utama">C.2.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/sale-advance-settlement/konfirmasi.html">Odoo - Finance &amp; Accounting: 2.14.3</a></p>
+<h3><a class="header" href="#c3-menyetujui-sale-advance-settlement" id="c3-menyetujui-sale-advance-settlement">C.3 Menyetujui Sale Advance Settlement</a></h3>
+<h4><a class="header" href="#c31-instruksi-kerja-utama" id="c31-instruksi-kerja-utama">C.3.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/sale-advance-settlement/approve.html">Odoo - Finance &amp; Accounting: 2.14.4</a></p>
+<h3><a class="header" href="#c4-memposting-sale-advance-settlement" id="c4-memposting-sale-advance-settlement">C.4 Memposting Sale Advance Settlement</a></h3>
+<h4><a class="header" href="#c41-instruksi-kerja-utama" id="c41-instruksi-kerja-utama">C.4.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/sale-advance-settlement/post.html">Odoo - Finance &amp; Accounting: 2.14.6</a></p>
+<h3><a class="header" href="#c5-membatalkan-sale-advance-settlement" id="c5-membatalkan-sale-advance-settlement">C.5 Membatalkan Sale Advance Settlement</a></h3>
+<h4><a class="header" href="#c51-instruksi-kerja-utama" id="c51-instruksi-kerja-utama">C.5.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/sale-advance-settlement/batal.html">Odoo - Finance &amp; Accounting: 2.14.7</a></p>
+<h3><a class="header" href="#c6-merestart-sale-advance-settlement" id="c6-merestart-sale-advance-settlement">C.6 Merestart Sale Advance Settlement</a></h3>
+<h4><a class="header" href="#c61-instruksi-kerja-utama" id="c61-instruksi-kerja-utama">C.6.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/sale-advance-settlement/restart.html">Odoo - Finance &amp; Accounting: 2.14.8</a></p>
+<h3><a class="header" href="#c7-mencetak-sale-advance-settlement" id="c7-mencetak-sale-advance-settlement">C.7 Mencetak Sale Advance Settlement</a></h3>
+<h4><a class="header" href="#c71-instruksi-kerja-utama" id="c71-instruksi-kerja-utama">C.7.1 Instruksi Kerja Utama</a></h4>
+<h2><a class="header" href="#a-nameoutputd-outputoutput" id="a-nameoutputd-outputoutput"><a name="output">D. OUTPUT</output></a></h2>
+<p><em>Message</em>: Sale Advance Settlement selesai diproses</p>
+<h1><a class="header" href="#merevisi-settlement-customer-invoice-dengan-uang-muka-penjualan" id="merevisi-settlement-customer-invoice-dengan-uang-muka-penjualan">Merevisi Settlement Customer Invoice Dengan Uang Muka Penjualan</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-3" id="a-nameinputa-inputa-3"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada kebutuhan untuk merevisi sale advance settlement</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-4" id="a-nameroleb-role-yang-terlibata-4"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/R</li>
+<li>Sale Advance Settlement Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-4" id="a-nameinstruksic-instruksi-kerjaa-4"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/merevisi-settlement-uang-muka-penjualan.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-1" id="a-nameoutputd-outputoutput-1"><a name="output">D. OUTPUT</output></a></h2>
+<p><em>Message</em>: Sale Advance Settlement selesai diproses</p>
+<h1><a class="header" href="#membatalkan-settlement-customer-invoice-dengan-uang-muka-penjualan" id="membatalkan-settlement-customer-invoice-dengan-uang-muka-penjualan">Membatalkan Settlement Customer Invoice Dengan Uang Muka Penjualan</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-4" id="a-nameinputa-inputa-4"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada kebutuhan untuk membatalkan sale advance settlement</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-5" id="a-nameroleb-role-yang-terlibata-5"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/R</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-5" id="a-nameinstruksic-instruksi-kerjaa-5"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/membatalkan-settlement-uang-muka-penjualan.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-2" id="a-nameoutputd-outputoutput-2"><a name="output">D. OUTPUT</output></a></h2>
+<p><em>Message</em>: Sale Advance Settlement dibatalkan</p>
+<h1><a class="header" href="#merilis-credit-note-secara-manual" id="merilis-credit-note-secara-manual">Merilis Credit Note Secara Manual</a></h1>
+<h2><a class="header" href="#a-nameinputa-starta-1" id="a-nameinputa-starta-1"><a name="input">A. START</a></a></h2>
+<ul>
+<li>Condition: Ada kebutuhan untuk merilis credit note secara manual</li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-6" id="a-nameroleb-role-yang-terlibata-6"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/R</li>
+<li>Credit Note Validator</li>
+<li>Penandatangan Credit Note</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-6" id="a-nameinstruksic-instruksi-kerjaa-6"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/membuat-credit-note-manual.png" alt="" /></p>
+<h2><a class="header" href="#a-nameinputd-enda-3" id="a-nameinputd-enda-3"><a name="input">D. END</a></a></h2>
+<p><em>Message</em>: Credit Note selesai diproses</p>
+<h1><a class="header" href="#merevisi-credit-note" id="merevisi-credit-note">Merevisi Credit Note</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-5" id="a-nameinputa-inputa-5"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada kebutuhan untuk merevisi Credit Note</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-7" id="a-nameroleb-role-yang-terlibata-7"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/R</li>
+<li>Credit Note Validator</li>
+<li>Penandatangan Credit Note</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-7" id="a-nameinstruksic-instruksi-kerjaa-7"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/merevisi-credit-note.png" alt="" /></p>
+<h2><a class="header" href="#a-nameinputd-enda-4" id="a-nameinputd-enda-4"><a name="input">D. END</a></a></h2>
+<p><em>Message</em>: Credit Note selesai diproses</p>
+<h1><a class="header" href="#membatalkan-credit-note" id="membatalkan-credit-note">Membatalkan Credit Note</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-6" id="a-nameinputa-inputa-6"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada credit note yang tidak jadi diterbitkan</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-8" id="a-nameroleb-role-yang-terlibata-8"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/R</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-8" id="a-nameinstruksic-instruksi-kerjaa-8"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/membatalkan-credit-note.png" alt="" /></p>
+<h2><a class="header" href="#a-nameinputd-enda-5" id="a-nameinputd-enda-5"><a name="input">D. END</a></a></h2>
+<p><em>Message</em>: Credit Note selesai dibatalkan</p>
+<h1><a class="header" href="#settlement-customer-invoice-dengan-credit-note" id="settlement-customer-invoice-dengan-credit-note">Settlement Customer Invoice Dengan Credit Note</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-7" id="a-nameinputa-inputa-7"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada konsumen yang memiliki customer invoice dan credit note</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-9" id="a-nameroleb-role-yang-terlibata-9"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/R</li>
+<li>Sale Refund Settlement Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-9" id="a-nameinstruksic-instruksi-kerjaa-9"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/settlement-credit-note.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-3" id="a-nameoutputd-outputoutput-3"><a name="output">D. OUTPUT</output></a></h2>
+<p><em>Message</em>: Sale Refund Settlement selesai diproses</p>
+<h1><a class="header" href="#merevisi-settlement-customer-invoice-dengan-credit-note" id="merevisi-settlement-customer-invoice-dengan-credit-note">Merevisi Settlement Customer Invoice Dengan Credit Note</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-8" id="a-nameinputa-inputa-8"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada kebutuhan untuk merevisi sale refund settlement</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-10" id="a-nameroleb-role-yang-terlibata-10"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/R</li>
+<li>Sale Refund Settlement Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-10" id="a-nameinstruksic-instruksi-kerjaa-10"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/merevisi-settlement-credit-note.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-4" id="a-nameoutputd-outputoutput-4"><a name="output">D. OUTPUT</output></a></h2>
+<p><em>Message</em>: Sale Refund Settlement selesai diproses</p>
+<h1><a class="header" href="#membatalkan-settlement-customer-invoice-dengan-credit-note" id="membatalkan-settlement-customer-invoice-dengan-credit-note">Membatalkan Settlement Customer Invoice Dengan Credit Note</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-9" id="a-nameinputa-inputa-9"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada kebutuhan untuk membatalkan sale refund settlement</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-11" id="a-nameroleb-role-yang-terlibata-11"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/R</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-11" id="a-nameinstruksic-instruksi-kerjaa-11"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/membatalkan-settlement-credit-note.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-5" id="a-nameoutputd-outputoutput-5"><a name="output">D. OUTPUT</output></a></h2>
+<p><em>Message</em>: Sale Refund Settlement dibatalkan</p>
+<h1><a class="header" href="#settlement-customer-invoice-dengan-supplier-invoice" id="settlement-customer-invoice-dengan-supplier-invoice">Settlement Customer Invoice Dengan Supplier Invoice</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-10" id="a-nameinputa-inputa-10"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada konsumen yang memiliki customer invoice dan supplier invoice</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-12" id="a-nameroleb-role-yang-terlibata-12"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/R</li>
+<li>Invoice Settlement Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-12" id="a-nameinstruksic-instruksi-kerjaa-12"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/settlement-invoice.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-6" id="a-nameoutputd-outputoutput-6"><a name="output">D. OUTPUT</output></a></h2>
+<p><em>Message</em>: Invoice Settlement selesai diproses</p>
+<h1><a class="header" href="#merevisi-settlement-customer-invoice-dengan-supplier-invoice" id="merevisi-settlement-customer-invoice-dengan-supplier-invoice">Merevisi Settlement Customer Invoice Dengan Supplier Invoice</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-11" id="a-nameinputa-inputa-11"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada kebutuhan untuk merevisi invoice settlement</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-13" id="a-nameroleb-role-yang-terlibata-13"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/R</li>
+<li>Invoice Settlement Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-13" id="a-nameinstruksic-instruksi-kerjaa-13"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/merevisi-settlement-invoice.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-7" id="a-nameoutputd-outputoutput-7"><a name="output">D. OUTPUT</output></a></h2>
+<p><em>Message</em>: Invoice Settlement selesai diproses</p>
+<h1><a class="header" href="#membatalkan-settlement-customer-invoice-dengan-supplier-invoice" id="membatalkan-settlement-customer-invoice-dengan-supplier-invoice">Membatalkan Settlement Customer Invoice Dengan Supplier Invoice</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-12" id="a-nameinputa-inputa-12"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada kebutuhan untuk membatalkan invoice settlement</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-14" id="a-nameroleb-role-yang-terlibata-14"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/R</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-14" id="a-nameinstruksic-instruksi-kerjaa-14"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/membatalkan-settlement-invoice.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-8" id="a-nameoutputd-outputoutput-8"><a name="output">D. OUTPUT</output></a></h2>
+<p><em>Message</em>: Invoice Settlement dibatalkan</p>
+<h1><a class="header" href="#ap" id="ap">A/P</a></h1>
+<h1><a class="header" href="#menerima-supplier-invoice-secara-manual" id="menerima-supplier-invoice-secara-manual">Menerima Supplier Invoice Secara Manual</a></h1>
+<h2><a class="header" href="#a-nameinputa-starta-2" id="a-nameinputa-starta-2"><a name="input">A. START</a></a></h2>
+<p><em>Message</em>: Ada supplier invoice diterima</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-15" id="a-nameroleb-role-yang-terlibata-15"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/P</li>
+<li>Supplier Invoice Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-15" id="a-nameinstruksic-instruksi-kerjaa-15"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/membuat-supplier-invoice-manual.png" alt="" /></p>
+<h2><a class="header" href="#a-nameinputd-enda-6" id="a-nameinputd-enda-6"><a name="input">D. END</a></a></h2>
+<p><em>Message</em>: Supplier Invoice selesai diproses</p>
+<h1><a class="header" href="#merevisi-supplier-invoice" id="merevisi-supplier-invoice">Merevisi Supplier Invoice</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-13" id="a-nameinputa-inputa-13"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada kebutuhan untuk merevisi supplier invoice</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-16" id="a-nameroleb-role-yang-terlibata-16"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/P</li>
+<li>Supplier Invoice Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-16" id="a-nameinstruksic-instruksi-kerjaa-16"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/merevisi-supplier-invoice.png" alt="" /></p>
+<h2><a class="header" href="#a-nameinputd-enda-7" id="a-nameinputd-enda-7"><a name="input">D. END</a></a></h2>
+<p><em>Message</em>: Supplier Invoice selesai diproses</p>
+<h1><a class="header" href="#membatalkan-supplier-invoice" id="membatalkan-supplier-invoice">Membatalkan Supplier Invoice</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-14" id="a-nameinputa-inputa-14"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada supplier invoice yang tidak jadi valid</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-17" id="a-nameroleb-role-yang-terlibata-17"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/P</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-17" id="a-nameinstruksic-instruksi-kerjaa-17"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/membatalkan-supplier-invoice.png" alt="" /></p>
+<h2><a class="header" href="#a-nameinputd-enda-8" id="a-nameinputd-enda-8"><a name="input">D. END</a></a></h2>
+<p><em>Message</em>: Supplier Invoice dibatalkan</p>
+<h1><a class="header" href="#settlement-supplier-invoice-dengan-uang-muka-pembelian" id="settlement-supplier-invoice-dengan-uang-muka-pembelian">Settlement Supplier Invoice Dengan Uang Muka Pembelian</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-15" id="a-nameinputa-inputa-15"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada supplier yang memiliki supplier invoice dan uang muka penjualan</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-18" id="a-nameroleb-role-yang-terlibata-18"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/P</li>
+<li>Purchase Advance Settlement Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-18" id="a-nameinstruksic-instruksi-kerjaa-18"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/settlement-uang-muka-pembelian.png" alt="" /></p>
+<h3><a class="header" href="#c1-membuat-purchase-advance-settlement" id="c1-membuat-purchase-advance-settlement">C.1 Membuat Purchase Advance Settlement</a></h3>
+<h4><a class="header" href="#c11-instruksi-kerja-utama-1" id="c11-instruksi-kerja-utama-1">C.1.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/purchase-advance-settlement/membuat.html">Odoo - Finance &amp; Accounting: 2.16.2</a></p>
+<h4><a class="header" href="#c12-sub-instruksi-kerja-1" id="c12-sub-instruksi-kerja-1">C.1.2 Sub Instruksi Kerja</a></h4>
+<ul>
+<li><a href="https://open-synergy.github.io/mdbook-fa/transaksi/purchase-advance-settlement/membuat-detail-import.html">Odoo - Finance &amp; Accounting: 2.16.2.1.1</a></li>
+<li><a href="https://open-synergy.github.io/mdbook-fa/transaksi/purchase-advance-settlement/membuat-detail-manual.html">Odoo - Finance &amp; Accounting: 2.16.2.1.2</a></li>
+</ul>
+<h3><a class="header" href="#c2-mengkonfirmasi-purchase-advance-settlement" id="c2-mengkonfirmasi-purchase-advance-settlement">C.2 Mengkonfirmasi Purchase Advance Settlement</a></h3>
+<h4><a class="header" href="#c21-instruksi-kerja-utama-1" id="c21-instruksi-kerja-utama-1">C.2.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/purchase-advance-settlement/konfirmasi.html">Odoo - Finance &amp; Accounting: 2.16.3</a></p>
+<h3><a class="header" href="#c3-menyetujui-purchase-advance-settlement" id="c3-menyetujui-purchase-advance-settlement">C.3 Menyetujui Purchase Advance Settlement</a></h3>
+<h4><a class="header" href="#c31-instruksi-kerja-utama-1" id="c31-instruksi-kerja-utama-1">C.3.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/purchase-advance-settlement/approve.html">Odoo - Finance &amp; Accounting: 2.16.4</a></p>
+<h3><a class="header" href="#c4-memposting-purchase-advance-settlement" id="c4-memposting-purchase-advance-settlement">C.4 Memposting Purchase Advance Settlement</a></h3>
+<h4><a class="header" href="#c41-instruksi-kerja-utama-1" id="c41-instruksi-kerja-utama-1">C.4.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/purchase-advance-settlement/post.html">Odoo - Finance &amp; Accounting: 2.16.6</a></p>
+<h3><a class="header" href="#c5-membatalkan-purchase-advance-settlement" id="c5-membatalkan-purchase-advance-settlement">C.5 Membatalkan Purchase Advance Settlement</a></h3>
+<h4><a class="header" href="#c51-instruksi-kerja-utama-1" id="c51-instruksi-kerja-utama-1">C.5.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/purchase-advance-settlement/batal.html">Odoo - Finance &amp; Accounting: 2.16.7</a></p>
+<h3><a class="header" href="#c6-merestart-purchase-advance-settlement" id="c6-merestart-purchase-advance-settlement">C.6 Merestart Purchase Advance Settlement</a></h3>
+<h4><a class="header" href="#c61-instruksi-kerja-utama-1" id="c61-instruksi-kerja-utama-1">C.6.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/purchase-advance-settlement/restart.html">Odoo - Finance &amp; Accounting: 2.16.8</a></p>
+<h3><a class="header" href="#c7-mencetak-purchase-advance-settlement" id="c7-mencetak-purchase-advance-settlement">C.7 Mencetak Purchase Advance Settlement</a></h3>
+<h4><a class="header" href="#c71-instruksi-kerja-utama-1" id="c71-instruksi-kerja-utama-1">C.7.1 Instruksi Kerja Utama</a></h4>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-9" id="a-nameoutputd-outputoutput-9"><a name="output">D. OUTPUT</output></a></h2>
+<p><em>Message</em>: Purchase Advance Settlement selesai diproses</p>
+<h1><a class="header" href="#merevisi-settlement-supplier-invoice-dengan-uang-muka-pembelian" id="merevisi-settlement-supplier-invoice-dengan-uang-muka-pembelian">Merevisi Settlement Supplier Invoice Dengan Uang Muka Pembelian</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-16" id="a-nameinputa-inputa-16"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada kebutuhan untuk merevisi purchase advance settlement</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-19" id="a-nameroleb-role-yang-terlibata-19"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/P</li>
+<li>Purchase Advance Settlement Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-19" id="a-nameinstruksic-instruksi-kerjaa-19"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/merevisi-settlement-uang-muka-pembelian.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-10" id="a-nameoutputd-outputoutput-10"><a name="output">D. OUTPUT</output></a></h2>
+<p><em>Message</em>: Purchase Advance Settlement selesai diproses</p>
+<h1><a class="header" href="#membatalkan-settlement-supplier-invoice-dengan-uang-muka-pembelian" id="membatalkan-settlement-supplier-invoice-dengan-uang-muka-pembelian">Membatalkan Settlement Supplier Invoice Dengan Uang Muka Pembelian</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-17" id="a-nameinputa-inputa-17"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada kebutuhan untuk membatalkan purchase advance settlement</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-20" id="a-nameroleb-role-yang-terlibata-20"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/P</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-20" id="a-nameinstruksic-instruksi-kerjaa-20"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/membatalkan-settlement-uang-muka-pembelian.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-11" id="a-nameoutputd-outputoutput-11"><a name="output">D. OUTPUT</output></a></h2>
+<p><em>Message</em>: Purchase Advance Settlement dibatalkan</p>
+<h1><a class="header" href="#menerima-debit-note-secara-manual" id="menerima-debit-note-secara-manual">Menerima Debit Note Secara Manual</a></h1>
+<h2><a class="header" href="#a-nameinputa-starta-3" id="a-nameinputa-starta-3"><a name="input">A. START</a></a></h2>
+<p><em>Message</em>: Ada Debit Note diterima</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-21" id="a-nameroleb-role-yang-terlibata-21"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/P</li>
+<li>Debit Note Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-21" id="a-nameinstruksic-instruksi-kerjaa-21"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/membuat-debit-note-manual.png" alt="" /></p>
+<h2><a class="header" href="#a-nameinputd-enda-9" id="a-nameinputd-enda-9"><a name="input">D. END</a></a></h2>
+<p><em>Message</em>: Debit Note selesai diproses</p>
+<h1><a class="header" href="#merevisi-debit-note" id="merevisi-debit-note">Merevisi Debit Note</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-18" id="a-nameinputa-inputa-18"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada kebutuhan untuk merevisi Debit Note</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-22" id="a-nameroleb-role-yang-terlibata-22"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/P</li>
+<li>Debit Note Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-22" id="a-nameinstruksic-instruksi-kerjaa-22"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/merevisi-debit-note.png" alt="" /></p>
+<h2><a class="header" href="#a-nameinputd-enda-10" id="a-nameinputd-enda-10"><a name="input">D. END</a></a></h2>
+<p><em>Message</em>: Debit Note selesai diproses</p>
+<h1><a class="header" href="#membatalkan-debit-note" id="membatalkan-debit-note">Membatalkan Debit Note</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-19" id="a-nameinputa-inputa-19"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada debit note yang perlu dibatalkan</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-23" id="a-nameroleb-role-yang-terlibata-23"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/P</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-23" id="a-nameinstruksic-instruksi-kerjaa-23"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/membatalkan-debit-note.png" alt="" /></p>
+<h2><a class="header" href="#a-nameinputd-enda-11" id="a-nameinputd-enda-11"><a name="input">D. END</a></a></h2>
+<p><em>Message</em>: Debit Note dibatalkan</p>
+<h1><a class="header" href="#settlement-supplier-invoice-dengan-debit-note" id="settlement-supplier-invoice-dengan-debit-note">Settlement Supplier Invoice Dengan Debit Note</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-20" id="a-nameinputa-inputa-20"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada supplier yang memiliki supplier invoice dan debit note</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-24" id="a-nameroleb-role-yang-terlibata-24"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/P</li>
+<li>Purchase Refund Settlement Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-24" id="a-nameinstruksic-instruksi-kerjaa-24"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/settlement-debit-note.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-12" id="a-nameoutputd-outputoutput-12"><a name="output">D. OUTPUT</output></a></h2>
+<p><em>Message</em>: Purchase Refund Settlement selesai diproses</p>
+<h1><a class="header" href="#merevisi-settlement-supplier-invoice-dengan-debit-note" id="merevisi-settlement-supplier-invoice-dengan-debit-note">Merevisi Settlement Supplier Invoice Dengan Debit Note</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-21" id="a-nameinputa-inputa-21"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada kebutuhan untuk merevisi purchase refund settlement</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-25" id="a-nameroleb-role-yang-terlibata-25"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/P</li>
+<li>Purchase Refund Settlement Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-25" id="a-nameinstruksic-instruksi-kerjaa-25"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/merevisi-settlement-debit-note.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-13" id="a-nameoutputd-outputoutput-13"><a name="output">D. OUTPUT</output></a></h2>
+<p><em>Message</em>: Purchase Refund Settlement selesai diproses</p>
+<h1><a class="header" href="#membatalkan-settlement-supplier-invoice-dengan-debit-note" id="membatalkan-settlement-supplier-invoice-dengan-debit-note">Membatalkan Settlement Supplier Invoice Dengan Debit Note</a></h1>
+<h1><a class="header" href="#bank--kas" id="bank--kas">Bank &amp; Kas</a></h1>
+<h1><a class="header" href="#menerima-uang-di-bank" id="menerima-uang-di-bank">Menerima Uang Di Bank</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-22" id="a-nameinputa-inputa-22"><a name="input">A. INPUT</a></a></h2>
+<p><em>Signal</em>: Statement bank/rekening koran menunjukan ada uang masuk</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-26" id="a-nameroleb-role-yang-terlibata-26"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Bank Cashier</li>
+<li>Bank Cashier Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-26" id="a-nameinstruksic-instruksi-kerjaa-26"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/penerimaan-bank.png" alt="" /></p>
+<h3><a class="header" href="#c1-membuat-bank-receipt" id="c1-membuat-bank-receipt">C.1 Membuat Bank Receipt</a></h3>
+<h4><a class="header" href="#c11-instruksi-kerja-utama-2" id="c11-instruksi-kerja-utama-2">C.1.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/bank-receipt/membuat.html">Odoo - Finance &amp; Accounting: 2.6.2</a></p>
+<h4><a class="header" href="#c12-sub-instruksi-kerja-2" id="c12-sub-instruksi-kerja-2">C.1.2 Sub Instruksi Kerja</a></h4>
+<ul>
+<li><a href="https://open-synergy.github.io/mdbook-fa/transaksi/bank-receipt/membuat-detail-import.html">Odoo - Finance &amp; Accounting: 2.6.2.1.1</a></li>
+<li><a href="https://open-synergy.github.io/mdbook-fa/transaksi/bank-receipt/membuat-detail-manual.html">Odoo - Finance &amp; Accounting: 2.6.2.1.2</a></li>
+</ul>
+<h3><a class="header" href="#c2-memproses-bank-receipt" id="c2-memproses-bank-receipt">C.2 Memproses Bank Receipt</a></h3>
+<h4><a class="header" href="#c21-sub-proses" id="c21-sub-proses">C.2.1 Sub-proses</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-prosedur-umum/fa/memproses-penerimaan-bank.html">Odoo - Prosedur Umum: Memproses Penerimaan Bank</a></p>
+<h1><a class="header" href="#merevisi-penerimaan-bank" id="merevisi-penerimaan-bank">Merevisi Penerimaan Bank</a></h1>
+<h2><a class="header" href="#a-nameinputa-starta-4" id="a-nameinputa-starta-4"><a name="input">A. START</a></a></h2>
+<p><em>Condition</em>: Ada kebutuhan untuk merevisi Bank Receipt</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-27" id="a-nameroleb-role-yang-terlibata-27"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Bank Cashier</li>
+<li>Bank Cashier Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-27" id="a-nameinstruksic-instruksi-kerjaa-27"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/merevisi-penerimaan-bank.png" alt="" /></p>
+<h3><a class="header" href="#c1-membatalkan-bank-receipt" id="c1-membatalkan-bank-receipt">C.1 Membatalkan Bank Receipt</a></h3>
+<h4><a class="header" href="#c11-instruksi-kerja-utama-3" id="c11-instruksi-kerja-utama-3">C.1.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/bank-receipt/batal.html">Odoo - Finance &amp; Accounting: Membatalkan Bank Receipt</a></p>
+<h3><a class="header" href="#c2-merestart-bank-receipt" id="c2-merestart-bank-receipt">C.2 Merestart Bank Receipt</a></h3>
+<h4><a class="header" href="#c21-instruksi-kerja-utama-2" id="c21-instruksi-kerja-utama-2">C.2.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/bank-receipt/restart.html">Odoo - Finance &amp; Accounting: Merestart Bank Receipt</a></p>
+<h3><a class="header" href="#c3-memodifikasi-bank-receipt" id="c3-memodifikasi-bank-receipt">C.3 Memodifikasi Bank Receipt</a></h3>
+<h4><a class="header" href="#c31-instruksi-kerja-utama-2" id="c31-instruksi-kerja-utama-2">C.3.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/bank-receipt/memodifikasi.html">Odoo - Finance &amp; Accounting: Memodifikasi Bank Receipt</a></p>
+<h3><a class="header" href="#c4-memproses-bank-receipt" id="c4-memproses-bank-receipt">C.4 Memproses Bank Receipt</a></h3>
+<h4><a class="header" href="#c41-sub-proses" id="c41-sub-proses">C.4.1 Sub-proses</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-prosedur-umum/fa/memproses-penerimaan-bank.html">Odoo - Prosedur Umum: Memproses Penerimaan Bank</a></p>
+<h2><a class="header" href="#a-nameinputd-enda-12" id="a-nameinputd-enda-12"><a name="input">D. END</a></a></h2>
+<p><em>Message</em>: Bank Receipt selesai diproses.</p>
+<h1><a class="header" href="#menerima-uang-di-kas" id="menerima-uang-di-kas">Menerima Uang Di Kas</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-23" id="a-nameinputa-inputa-23"><a name="input">A. INPUT</a></a></h2>
+<p><em>Message</em>: Uang diterima</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-28" id="a-nameroleb-role-yang-terlibata-28"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Cash Cashier</li>
+<li>Cash Receipt Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-28" id="a-nameinstruksic-instruksi-kerjaa-28"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/penerimaan-kas.png" alt="" /></p>
+<h3><a class="header" href="#c1-membuat-cash-receipt" id="c1-membuat-cash-receipt">C.1 Membuat Cash Receipt</a></h3>
+<h4><a class="header" href="#c11-instruksi-kerja-utama-4" id="c11-instruksi-kerja-utama-4">C.1.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/cash-receipt/membuat.html">Odoo - Finance &amp; Accounting: 2.8.2</a></p>
+<h4><a class="header" href="#c12-sub-instruksi-kerja-3" id="c12-sub-instruksi-kerja-3">C.1.2 Sub Instruksi Kerja</a></h4>
+<ul>
+<li><a href="https://open-synergy.github.io/mdbook-fa/transaksi/cash-receipt/membuat-detail-import.html">Odoo - Finance &amp; Accounting: 2.8.2.1.1</a></li>
+<li><a href="https://open-synergy.github.io/mdbook-fa/transaksi/cash-receipt/membuat-detail-manual.html">Odoo - Finance &amp; Accounting: 2.8.2.1.2</a></li>
+</ul>
+<h3><a class="header" href="#c2-mengkonfirmasi-cash-receipt" id="c2-mengkonfirmasi-cash-receipt">C.2 Mengkonfirmasi Cash Receipt</a></h3>
+<h4><a class="header" href="#c21-instruksi-kerja-utama-3" id="c21-instruksi-kerja-utama-3">C.2.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/cash-receipt/konfirmasi.html">Odoo - Finance &amp; Accounting: 2.8.3</a></p>
+<h3><a class="header" href="#c3-menyetujui-cash-receipt" id="c3-menyetujui-cash-receipt">C.3 Menyetujui Cash Receipt</a></h3>
+<h4><a class="header" href="#c31-instruksi-kerja-utama-3" id="c31-instruksi-kerja-utama-3">C.3.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/cash-receipt/approve.html">Odoo - Finance &amp; Accounting: 2.8.4</a></p>
+<h3><a class="header" href="#c4-memposting-cash-receipt" id="c4-memposting-cash-receipt">C.4 Memposting Cash Receipt</a></h3>
+<h4><a class="header" href="#c41-instruksi-kerja-utama-2" id="c41-instruksi-kerja-utama-2">C.4.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/cash-receipt/post.html">Odoo - Finance &amp; Accounting: 2.8.6</a></p>
+<h3><a class="header" href="#c5-membatalkan-cash-receipt" id="c5-membatalkan-cash-receipt">C.5 Membatalkan Cash Receipt</a></h3>
+<h4><a class="header" href="#c51-instruksi-kerja-utama-2" id="c51-instruksi-kerja-utama-2">C.5.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/cash-receipt/batal.html">Odoo - Finance &amp; Accounting: 2.8.7</a></p>
+<h3><a class="header" href="#c6-merestart-cash-receipt" id="c6-merestart-cash-receipt">C.6 Merestart Cash Receipt</a></h3>
+<h4><a class="header" href="#c61-instruksi-kerja-utama-2" id="c61-instruksi-kerja-utama-2">C.6.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/cash-receipt/restart.html">Odoo - Finance &amp; Accounting: 2.8.8</a></p>
+<h3><a class="header" href="#c7-mencetak-cash-receipt" id="c7-mencetak-cash-receipt">C.7 Mencetak Cash Receipt</a></h3>
+<h4><a class="header" href="#c71-instruksi-kerja-utama-2" id="c71-instruksi-kerja-utama-2">C.7.1 Instruksi Kerja Utama</a></h4>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-14" id="a-nameoutputd-outputoutput-14"><a name="output">D. OUTPUT</output></a></h2>
+<p><em>Message</em>: Cash Receipt selesai diproses</p>
+<h1><a class="header" href="#merevisi-penerimaan-kas" id="merevisi-penerimaan-kas">Merevisi Penerimaan Kas</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-24" id="a-nameinputa-inputa-24"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada kebutuhan merevisi Cash Receipt</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-29" id="a-nameroleb-role-yang-terlibata-29"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Cash Cashier</li>
+<li>Cash Receipt Settlement Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-29" id="a-nameinstruksic-instruksi-kerjaa-29"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/revisi-penerimaan-kas.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-15" id="a-nameoutputd-outputoutput-15"><a name="output">D. OUTPUT</output></a></h2>
+<p><em>Message</em>: Cash Receipt selesai diproses</p>
+<h1><a class="header" href="#mengeluarkan-uang-melalui-bank" id="mengeluarkan-uang-melalui-bank">Mengeluarkan Uang Melalui Bank</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-25" id="a-nameinputa-inputa-25"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada permintaan pembayaran</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-30" id="a-nameroleb-role-yang-terlibata-30"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Bank Cashier</li>
+<li>Bank Payment Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-30" id="a-nameinstruksic-instruksi-kerjaa-30"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/pengeluaran-bank.png" alt="" /></p>
+<h3><a class="header" href="#c1-membuat-bank-payment" id="c1-membuat-bank-payment">C.1 Membuat Bank Payment</a></h3>
+<h4><a class="header" href="#c11-instruksi-kerja-utama-5" id="c11-instruksi-kerja-utama-5">C.1.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/bank-payment/membuat.html">Odoo - Finance &amp; Accounting: 2.7.2</a></p>
+<h4><a class="header" href="#c12-sub-instruksi-kerja-4" id="c12-sub-instruksi-kerja-4">C.1.2 Sub Instruksi Kerja</a></h4>
+<ul>
+<li><a href="https://open-synergy.github.io/mdbook-fa/transaksi/bank-payment/membuat-detail-import.html">Odoo - Finance &amp; Accounting: 2.7.2.1.1</a></li>
+<li><a href="https://open-synergy.github.io/mdbook-fa/transaksi/bank-payment/membuat-detail-manual.html">Odoo - Finance &amp; Accounting: 2.7.2.1.2</a></li>
+</ul>
+<h3><a class="header" href="#c2-mengkonfirmasi-bank-payment" id="c2-mengkonfirmasi-bank-payment">C.2 Mengkonfirmasi Bank Payment</a></h3>
+<h4><a class="header" href="#c21-instruksi-kerja-utama-4" id="c21-instruksi-kerja-utama-4">C.2.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/bank-payment/konfirmasi.html">Odoo - Finance &amp; Accounting: 2.7.3</a></p>
+<h3><a class="header" href="#c3-menyetujui-bank-payment" id="c3-menyetujui-bank-payment">C.3 Menyetujui Bank Payment</a></h3>
+<h4><a class="header" href="#c31-instruksi-kerja-utama-4" id="c31-instruksi-kerja-utama-4">C.3.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/bank-payment/approve.html">Odoo - Finance &amp; Accounting: 2.7.4</a></p>
+<h3><a class="header" href="#c4-memposting-bank-payment" id="c4-memposting-bank-payment">C.4 Memposting Bank Payment</a></h3>
+<h4><a class="header" href="#c41-instruksi-kerja-utama-3" id="c41-instruksi-kerja-utama-3">C.4.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/bank-payment/post.html">Odoo - Finance &amp; Accounting: 2.7.6</a></p>
+<h3><a class="header" href="#c5-membatalkan-bank-payment" id="c5-membatalkan-bank-payment">C.5 Membatalkan Bank Payment</a></h3>
+<h4><a class="header" href="#c51-instruksi-kerja-utama-3" id="c51-instruksi-kerja-utama-3">C.5.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/bank-payment/batal.html">Odoo - Finance &amp; Accounting: 2.7.7</a></p>
+<h3><a class="header" href="#c6-merestart-bank-payment" id="c6-merestart-bank-payment">C.6 Merestart Bank Payment</a></h3>
+<h4><a class="header" href="#c61-instruksi-kerja-utama-3" id="c61-instruksi-kerja-utama-3">C.6.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/bank-payment/restart.html">Odoo - Finance &amp; Accounting: 2.7.8</a></p>
+<h3><a class="header" href="#c7-mencetak-bank-payment" id="c7-mencetak-bank-payment">C.7 Mencetak Bank Payment</a></h3>
+<h4><a class="header" href="#c71-instruksi-kerja-utama-3" id="c71-instruksi-kerja-utama-3">C.7.1 Instruksi Kerja Utama</a></h4>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-16" id="a-nameoutputd-outputoutput-16"><a name="output">D. OUTPUT</output></a></h2>
+<p><em>Message</em>: Bank Payment selesai diproses</p>
+<h1><a class="header" href="#merevisi-pengeluaran-bank" id="merevisi-pengeluaran-bank">Merevisi Pengeluaran Bank</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-26" id="a-nameinputa-inputa-26"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada kebutuhan untuk merevisi Bank Payment</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-31" id="a-nameroleb-role-yang-terlibata-31"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Bank Cashier</li>
+<li>Bank Payment Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-31" id="a-nameinstruksic-instruksi-kerjaa-31"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/merevisi-pengeluaran-bank.png" alt="" /></p>
+<h2><a class="header" href="#a-nameinputd-enda-13" id="a-nameinputd-enda-13"><a name="input">D. END</a></a></h2>
+<p><em>Message</em>: Bank Payment selesai diproses</p>
+<h1><a class="header" href="#mengeluarkan-uang-melalui-kas" id="mengeluarkan-uang-melalui-kas">Mengeluarkan Uang Melalui Kas</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-27" id="a-nameinputa-inputa-27"><a name="input">A. INPUT</a></a></h2>
+<p>Ada permintaan pembayaran</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-32" id="a-nameroleb-role-yang-terlibata-32"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Cash Cashier</li>
+<li>Cash Payment Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-32" id="a-nameinstruksic-instruksi-kerjaa-32"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/pengeluaran-kas.png" alt="" /></p>
+<h3><a class="header" href="#c1-membuat-cash-payment" id="c1-membuat-cash-payment">C.1 Membuat Cash Payment</a></h3>
+<h4><a class="header" href="#c11-instruksi-kerja-utama-6" id="c11-instruksi-kerja-utama-6">C.1.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/cash-payment/membuat.html">Odoo - Finance &amp; Accounting: 2.9.2</a></p>
+<h4><a class="header" href="#c12-sub-instruksi-kerja-5" id="c12-sub-instruksi-kerja-5">C.1.2 Sub Instruksi Kerja</a></h4>
+<ul>
+<li><a href="https://open-synergy.github.io/mdbook-fa/transaksi/cash-payment/membuat-detail-import.html">Odoo - Finance &amp; Accounting: 2.9.2.1.1</a></li>
+<li><a href="https://open-synergy.github.io/mdbook-fa/transaksi/cash-payment/membuat-detail-manual.html">Odoo - Finance &amp; Accounting: 2.9.2.1.2</a></li>
+</ul>
+<h3><a class="header" href="#c2-mengkonfirmasi-cash-payment" id="c2-mengkonfirmasi-cash-payment">C.2 Mengkonfirmasi Cash Payment</a></h3>
+<h4><a class="header" href="#c21-instruksi-kerja-utama-5" id="c21-instruksi-kerja-utama-5">C.2.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/cash-payment/konfirmasi.html">Odoo - Finance &amp; Accounting: 2.9.3</a></p>
+<h3><a class="header" href="#c3-menyetujui-cash-payment" id="c3-menyetujui-cash-payment">C.3 Menyetujui Cash Payment</a></h3>
+<h4><a class="header" href="#c31-instruksi-kerja-utama-5" id="c31-instruksi-kerja-utama-5">C.3.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/cash-payment/approve.html">Odoo - Finance &amp; Accounting: 2.9.4</a></p>
+<h3><a class="header" href="#c4-memposting-cash-payment" id="c4-memposting-cash-payment">C.4 Memposting Cash Payment</a></h3>
+<h4><a class="header" href="#c41-instruksi-kerja-utama-4" id="c41-instruksi-kerja-utama-4">C.4.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/cash-payment/post.html">Odoo - Finance &amp; Accounting: 2.9.6</a></p>
+<h3><a class="header" href="#c5-membatalkan-cash-payment" id="c5-membatalkan-cash-payment">C.5 Membatalkan Cash Payment</a></h3>
+<h4><a class="header" href="#c51-instruksi-kerja-utama-4" id="c51-instruksi-kerja-utama-4">C.5.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/cash-payment/batal.html">Odoo - Finance &amp; Accounting: 2.9.7</a></p>
+<h3><a class="header" href="#c6-merestart-cash-payment" id="c6-merestart-cash-payment">C.6 Merestart Cash Payment</a></h3>
+<h4><a class="header" href="#c61-instruksi-kerja-utama-4" id="c61-instruksi-kerja-utama-4">C.6.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-fa/transaksi/cash-payment/restart.html">Odoo - Finance &amp; Accounting: 2.9.8</a></p>
+<h3><a class="header" href="#c7-mencetak-cash-payment" id="c7-mencetak-cash-payment">C.7 Mencetak Cash Payment</a></h3>
+<h4><a class="header" href="#c71-instruksi-kerja-utama-4" id="c71-instruksi-kerja-utama-4">C.7.1 Instruksi Kerja Utama</a></h4>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-17" id="a-nameoutputd-outputoutput-17"><a name="output">D. OUTPUT</output></a></h2>
+<h1><a class="header" href="#merevisi-pengeluaran-kas" id="merevisi-pengeluaran-kas">Merevisi Pengeluaran Kas</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-28" id="a-nameinputa-inputa-28"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada kebutuhan untuk merevisi Cash Payment</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-33" id="a-nameroleb-role-yang-terlibata-33"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Cash Cashier</li>
+<li>Cash Payment Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-33" id="a-nameinstruksic-instruksi-kerjaa-33"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="fa/../img/merevisi-pengeluaran-kas.png" alt="" /></p>
+<h2><a class="header" href="#a-nameinputd-enda-14" id="a-nameinputd-enda-14"><a name="input">D. END</a></a></h2>
+<p><em>Message</em>: Cash Payment selesai diproses</p>
+<h1><a class="header" href="#inventory" id="inventory">Inventory</a></h1>
+<h1><a class="header" href="#stok-opname" id="stok-opname">Stok Opname</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-29" id="a-nameinputa-inputa-29"><a name="input">A. INPUT</a></a></h2>
+<p>Periode waktu yang sudah ditentukan</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-34" id="a-nameroleb-role-yang-terlibata-34"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Warehouse User</li>
+<li>Warehouse Manager</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-34" id="a-nameinstruksic-instruksi-kerjaa-34"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="inventory/../img/stock-opname.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-18" id="a-nameoutputd-outputoutput-18"><a name="output">D. OUTPUT</output></a></h2>
+<h1><a class="header" href="#meminta-barang-dari-gudang-lain" id="meminta-barang-dari-gudang-lain">Meminta Barang Dari Gudang Lain</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-30" id="a-nameinputa-inputa-30"><a name="input">A. INPUT</a></a></h2>
+<p>Kebutuhan akan restock yang bisa dipenuhi oleh gudang lain</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-35" id="a-nameroleb-role-yang-terlibata-35"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Warehouse User Gudang Tujuan</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-35" id="a-nameinstruksic-instruksi-kerjaa-35"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="inventory/../img/create-pull-flow.png" alt="" /></p>
+<h3><a class="header" href="#c1-membuat-interwarehouse-in" id="c1-membuat-interwarehouse-in">C.1 Membuat Interwarehouse-In</a></h3>
+<h4><a class="header" href="#c11-instruksi-kerja-utama-7" id="c11-instruksi-kerja-utama-7">C.1.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-inventory/transaksi/interwarehouse-in/membuat.html">Odoo - Inventory: 1.2.2</a></p>
+<h4><a class="header" href="#c12-sub-instruksi-kerja-6" id="c12-sub-instruksi-kerja-6">C.1.2 Sub Instruksi Kerja</a></h4>
+<ul>
+<li><a href="https://open-synergy.github.io/mdbook-inventory/transaksi/interwarehouse-in/produk-tambah.html">Odoo - Inventory: 1.2.3</a></li>
+<li><a href="https://open-synergy.github.io/mdbook-inventory/transaksi/interwarehouse-in/produk-modifikasi.html">Odoo - Inventory: 1.2.4</a></li>
+<li><a href="https://open-synergy.github.io/mdbook-inventory/transaksi/interwarehouse-in/produk-hapus.html">Odoo - Inventory: 1.2.5</a></li>
+</ul>
+<h3><a class="header" href="#c2-mengkonfirmasi-interwarehouse-in" id="c2-mengkonfirmasi-interwarehouse-in">C.2 Mengkonfirmasi Interwarehouse-In</a></h3>
+<h4><a class="header" href="#c21-instruksi-kerja-utama-6" id="c21-instruksi-kerja-utama-6">C.2.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-inventory/transaksi/interwarehouse-in/konfirmasi.html">Odoo - Inventory: 1.2.6</a></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-19" id="a-nameoutputd-outputoutput-19"><a name="output">D. OUTPUT</output></a></h2>
+<p>Notifikasi mengenai adanya inter-warehouse out yang harus diproses kepada Warehouse User Gudang Tujuan.</p>
+<h1><a class="header" href="#memproses-permintaan-barang-dari-gudang-lain" id="memproses-permintaan-barang-dari-gudang-lain">Memproses Permintaan Barang Dari Gudang Lain</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-31" id="a-nameinputa-inputa-31"><a name="input">A. INPUT</a></a></h2>
+<p>Notifikasi mengenai adanya inter-warehouse out yang harus diproses</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-36" id="a-nameroleb-role-yang-terlibata-36"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Warehouse User Gudang Tujuan</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-36" id="a-nameinstruksic-instruksi-kerjaa-36"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="inventory/../img/memproses-interwarehouse-out-pull-flow.png" alt="" /></p>
+<h3><a class="header" href="#c1-mengecek-ketersediaan-interwarehouse-out" id="c1-mengecek-ketersediaan-interwarehouse-out">C.1 Mengecek Ketersediaan Interwarehouse-Out</a></h3>
+<h4><a class="header" href="#c11-instruksi-kerja-utama-8" id="c11-instruksi-kerja-utama-8">C.1.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-inventory/transaksi/interwarehouse-out/check.html">Odoo - Inventory: 1.15.7</a></p>
+<h3><a class="header" href="#c2-merealisasi-interwarehouse-out" id="c2-merealisasi-interwarehouse-out">C.2 Merealisasi Interwarehouse-Out</a></h3>
+<h4><a class="header" href="#c21-instruksi-kerja-utama-7" id="c21-instruksi-kerja-utama-7">C.2.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-inventory/transaksi/interwarehouse-out/transfer.html">Odoo - Inventory: 1.15.8</a></p>
+<h3><a class="header" href="#c3-mencetak-interwarehouse-out" id="c3-mencetak-interwarehouse-out">C.3 Mencetak Interwarehouse-Out</a></h3>
+<h4><a class="header" href="#c31-instruksi-kerja-utama-6" id="c31-instruksi-kerja-utama-6">C.3.1 Instruksi Kerja Utama</a></h4>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-20" id="a-nameoutputd-outputoutput-20"><a name="output">D. OUTPUT</output></a></h2>
+<p>Notifikasi bahwa inter-warehouse out siap dikirim</p>
+<h1><a class="header" href="#menerima-barang" id="menerima-barang">Menerima Barang</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-32" id="a-nameinputa-inputa-32"><a name="input">A. INPUT</a></a></h2>
+<p>Barang diterima di gudang</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-37" id="a-nameroleb-role-yang-terlibata-37"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Warehouse User</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-37" id="a-nameinstruksic-instruksi-kerjaa-37"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="inventory/../img/penerimaan-barang.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-21" id="a-nameoutputd-outputoutput-21"><a name="output">D. OUTPUT</output></a></h2>
+<p>Berlanjut ke salah satu prosedur di bawah:</p>
+<ul>
+<li><a href="inventory/./menerima-pihak-ketiga.html">Menerima Barang Dari Pihak Ketiga Lainnya</a></li>
+<li><a href="inventory/./menerima-konsumen.html">Menerima Barang Dari Konsumen</a></li>
+<li><a href="inventory/./menerima-resupply.html">Menerima Resupply Dari Gudang Lain</a></li>
+<li><a href="inventory/./menerima-supplier.html">Menerima Barang Dari Supplier</a></li>
+<li><a href="inventory/./menerima-karyawan.html">Menerima Barang Dari Karyawan</a></li>
+</ul>
+<h1><a class="header" href="#menerima-barang-dari-pihak-ketiga-lainnya" id="menerima-barang-dari-pihak-ketiga-lainnya">Menerima Barang Dari Pihak Ketiga Lainnya</a></h1>
+<h1><a class="header" href="#menerima-barang-dari-konsumen" id="menerima-barang-dari-konsumen">Menerima Barang Dari Konsumen</a></h1>
+<h1><a class="header" href="#menerima-barang-retur-penjualan" id="menerima-barang-retur-penjualan">Menerima Barang Retur Penjualan</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-33" id="a-nameinputa-inputa-33"><a name="input">A. INPUT</a></a></h2>
+<p>Lanjutan dari <a href="inventory/./menerima-konsumen.html">Prosedur Menerima Barang Dari Konsumen</a></p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-38" id="a-nameroleb-role-yang-terlibata-38"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Warehouse User</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-38" id="a-nameinstruksic-instruksi-kerjaa-38"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="inventory/../img/menerima-barang-retur-jual.png" alt="" /></p>
+<h3><a class="header" href="#c1-merealisasi-rma-customer-in" id="c1-merealisasi-rma-customer-in">C.1 Merealisasi RMA Customer In</a></h3>
+<h4><a class="header" href="#c11-instruksi-kerja-utama-9" id="c11-instruksi-kerja-utama-9">C.1.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-inventory/transaksi/rma-customer-in/transfer.html">Odoo - Inventory: 1.5.5</a></p>
+<h3><a class="header" href="#c2-mencetak-rma-customer-in" id="c2-mencetak-rma-customer-in">C.2 Mencetak RMA Customer In</a></h3>
+<h4><a class="header" href="#c21-instruksi-kerja-utama-8" id="c21-instruksi-kerja-utama-8">C.2.1 Instruksi Kerja Utama</a></h4>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-22" id="a-nameoutputd-outputoutput-22"><a name="output">D. OUTPUT</output></a></h2>
+<h1><a class="header" href="#menerima-resupply-dari-gudang-lain" id="menerima-resupply-dari-gudang-lain">Menerima Resupply Dari Gudang Lain</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-34" id="a-nameinputa-inputa-34"><a name="input">A. INPUT</a></a></h2>
+<p>Lanjutan dari <a href="inventory/./menerima-barang.html">Prosedur Penerimaan Barang</a></p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-39" id="a-nameroleb-role-yang-terlibata-39"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Warehouse User</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-39" id="a-nameinstruksic-instruksi-kerjaa-39"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="inventory/../img/menerima-resupply.png" alt="" /></p>
+<h3><a class="header" href="#c1-merealisasi-inter-warehouse-in" id="c1-merealisasi-inter-warehouse-in">C.1 Merealisasi Inter-Warehouse In</a></h3>
+<h4><a class="header" href="#c11-instruksi-kerja-utama-10" id="c11-instruksi-kerja-utama-10">C.1.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-inventory/transaksi/interwarehouse-in/transfer.html">Odoo - Inventory: 1.2.11</a></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-23" id="a-nameoutputd-outputoutput-23"><a name="output">D. OUTPUT</output></a></h2>
+<h1><a class="header" href="#menerima-barang-dari-supplier" id="menerima-barang-dari-supplier">Menerima Barang Dari Supplier</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-35" id="a-nameinputa-inputa-35"><a name="input">A. INPUT</a></a></h2>
+<p>Lanjutan dari <a href="inventory/./menerima-barang.html">Prosedur Menerima Barang</a></p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-40" id="a-nameroleb-role-yang-terlibata-40"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Warehouse User</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-40" id="a-nameinstruksic-instruksi-kerjaa-40"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="inventory/../img/menerima-barang-dari-supplier.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-24" id="a-nameoutputd-outputoutput-24"><a name="output">D. OUTPUT</output></a></h2>
+<p>Berlanjut ke salah satu prosedur di bawah:</p>
+<ul>
+<li><a href="inventory/./menerima-hasil-pembelian.html">Menerima Hasil Pembelian</a></li>
+</ul>
+<h1><a class="header" href="#menerima-barang-hasil-pembelian" id="menerima-barang-hasil-pembelian">Menerima Barang Hasil Pembelian</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-36" id="a-nameinputa-inputa-36"><a name="input">A. INPUT</a></a></h2>
+<p>Lanjutan dari <a href="inventory/./menerima-supplier.html">Prosedur Menerima Barang Dari Supplier</a></p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-41" id="a-nameroleb-role-yang-terlibata-41"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Warehouse User</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-41" id="a-nameinstruksic-instruksi-kerjaa-41"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="inventory/../img/menerima-barang-hasil-pembelian.png" alt="" /></p>
+<h3><a class="header" href="#c1-merealisasi-good-receipt" id="c1-merealisasi-good-receipt">C.1 Merealisasi Good Receipt</a></h3>
+<h4><a class="header" href="#c11-instruksi-kerja-utama-11" id="c11-instruksi-kerja-utama-11">C.1.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-inventory/transaksi/goods-receipt/transfer.html">Odoo - Inventory: 1.1.5</a></p>
+<h3><a class="header" href="#c2-mencetak-good-receipt" id="c2-mencetak-good-receipt">C.2 Mencetak Good Receipt</a></h3>
+<h4><a class="header" href="#c21-instruksi-kerja-utama-9" id="c21-instruksi-kerja-utama-9">C.2.1 Instruksi Kerja Utama</a></h4>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-25" id="a-nameoutputd-outputoutput-25"><a name="output">D. OUTPUT</output></a></h2>
+<h1><a class="header" href="#menerima-barang-promosi" id="menerima-barang-promosi">Menerima Barang Promosi</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-37" id="a-nameinputa-inputa-37"><a name="input">A. INPUT</a></a></h2>
+<p>Lanjutan dari <a href="inventory/./menerima-supplier.html">Prosedur Menerima Barang Dari Supplier</a></p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-42" id="a-nameroleb-role-yang-terlibata-42"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Warehouse User</li>
+<li>Warehouse Manager</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-42" id="a-nameinstruksic-instruksi-kerjaa-42"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="inventory/../img/menerima-barang-promosi.png" alt="" /></p>
+<h3><a class="header" href="#c1-membuat-supplier-promotion" id="c1-membuat-supplier-promotion">C.1 Membuat Supplier Promotion</a></h3>
+<h4><a class="header" href="#c11-instruksi-kerja-utama-12" id="c11-instruksi-kerja-utama-12">C.1.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-inventory/transaksi/supplier-promotion/membuat.html">Odoo - Inventory: 1.3.2</a></p>
+<h3><a class="header" href="#c2-memeriksa-supplier-promotion" id="c2-memeriksa-supplier-promotion">C.2 Memeriksa Supplier Promotion</a></h3>
+<h4><a class="header" href="#c21-instruksi-kerja-utama-10" id="c21-instruksi-kerja-utama-10">C.2.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-inventory/transaksi/supplier-promotion/check.html">Odoo - Inventory: 1.3.9</a></p>
+<h3><a class="header" href="#c3-memodifikasi-supplier-promotion" id="c3-memodifikasi-supplier-promotion">C.3 Memodifikasi Supplier Promotion</a></h3>
+<h4><a class="header" href="#c31-instruksi-kerja-utama-7" id="c31-instruksi-kerja-utama-7">C.3.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-inventory/transaksi/supplier-promotion/modifikasi.html">Odoo - Inventory: 1.3.3</a></p>
+<h3><a class="header" href="#c4-mengkonfirmasi-supplier-promotion" id="c4-mengkonfirmasi-supplier-promotion">C.4 Mengkonfirmasi Supplier Promotion</a></h3>
+<h4><a class="header" href="#c41-instruksi-kerja-utama-5" id="c41-instruksi-kerja-utama-5">C.4.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-inventory/transaksi/supplier-promotion/konfirmasi.html">Odoo - Inventory: 1.3.8</a></p>
+<h3><a class="header" href="#c5-memeriksa-supplier-promotion" id="c5-memeriksa-supplier-promotion">C.5 Memeriksa Supplier Promotion</a></h3>
+<h4><a class="header" href="#c51-instruksi-kerja-utama-5" id="c51-instruksi-kerja-utama-5">C.5.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-inventory/transaksi/supplier-promotion/check.html">Odoo - Inventory: 1.3.9</a></p>
+<h3><a class="header" href="#c6-membatalkan-supplier-promotion" id="c6-membatalkan-supplier-promotion">C.6 Membatalkan Supplier Promotion</a></h3>
+<h4><a class="header" href="#c61-instruksi-kerja-utama-5" id="c61-instruksi-kerja-utama-5">C.6.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-inventory/transaksi/supplier-promotion/batal.html">Odoo - Inventory: 1.3.12</a></p>
+<h3><a class="header" href="#c7-merestart-supplier-promotion" id="c7-merestart-supplier-promotion">C.7 Merestart Supplier Promotion</a></h3>
+<h4><a class="header" href="#c71-instruksi-kerja-utama-5" id="c71-instruksi-kerja-utama-5">C.7.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-inventory/transaksi/supplier-promotion/restart.html">Odoo - Inventory: 1.3.13</a></p>
+<h3><a class="header" href="#c8-merealisasi-supplier-promotion" id="c8-merealisasi-supplier-promotion">C.8 Merealisasi Supplier Promotion</a></h3>
+<h4><a class="header" href="#c81-instruksi-kerja-utama" id="c81-instruksi-kerja-utama">C.8.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-inventory/transaksi/supplier-promotion/transfer.html">Odoo - Inventory: 1.3.10</a></p>
+<h3><a class="header" href="#c9-mencetak-supplier-promotion" id="c9-mencetak-supplier-promotion">C.9 Mencetak Supplier Promotion</a></h3>
+<h4><a class="header" href="#c91-instruksi-kerja-utama" id="c91-instruksi-kerja-utama">C.9.1 Instruksi Kerja Utama</a></h4>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-26" id="a-nameoutputd-outputoutput-26"><a name="output">D. OUTPUT</output></a></h2>
+<h1><a class="header" href="#menerima-barang-realisasi-retur-pembelian" id="menerima-barang-realisasi-retur-pembelian">Menerima Barang Realisasi Retur Pembelian</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-38" id="a-nameinputa-inputa-38"><a name="input">A. INPUT</a></a></h2>
+<p>Lanjutan dari <a href="inventory/./menerima-supplier.html">Prosedur Menerima Barang Dari Supplier</a></p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-43" id="a-nameroleb-role-yang-terlibata-43"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Warehouse User</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-43" id="a-nameinstruksic-instruksi-kerjaa-43"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="inventory/../img/menerima-barang-realisasi-retur-beli.png" alt="" /></p>
+<h3><a class="header" href="#c1-merealisasi-rma-supplier-in" id="c1-merealisasi-rma-supplier-in">C.1 Merealisasi RMA Supplier In</a></h3>
+<h4><a class="header" href="#c11-instruksi-kerja-utama-13" id="c11-instruksi-kerja-utama-13">C.1.1 Instruksi Kerja Utama</a></h4>
+<p><a href="https://open-synergy.github.io/mdbook-inventory/transaksi/rma-supplier-in/transfer.html">Odoo - Inventory: 1.4.5</a></p>
+<h3><a class="header" href="#c2-mencetak-rma-supplier-in" id="c2-mencetak-rma-supplier-in">C.2 Mencetak RMA Supplier In</a></h3>
+<h4><a class="header" href="#c21-instruksi-kerja-utama-11" id="c21-instruksi-kerja-utama-11">C.2.1 Instruksi Kerja Utama</a></h4>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-27" id="a-nameoutputd-outputoutput-27"><a name="output">D. OUTPUT</output></a></h2>
+<h1><a class="header" href="#menerima-barang-dari-karyawan" id="menerima-barang-dari-karyawan">Menerima Barang Dari Karyawan</a></h1>
+<h1><a class="header" href="#internal-movement" id="internal-movement">Internal Movement</a></h1>
+<h1><a class="header" href="#memindahkan-barang-dari-antar-lokasi-di-gudang-yang-sama" id="memindahkan-barang-dari-antar-lokasi-di-gudang-yang-sama">Memindahkan Barang Dari Antar Lokasi Di Gudang Yang Sama</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-39" id="a-nameinputa-inputa-39"><a name="input">A. INPUT</a></a></h2>
+<ul>
+<li><em>Condition</em>: Ada barang yang akan dipindahkan ke lokasi lain di gudang yang sama</li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-44" id="a-nameroleb-role-yang-terlibata-44"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Warehouse User</li>
+<li>Warehouse Manager</li>
+<li>Warehouse Helper</li>
+</ul>
+<h2><a class="header" href="#a-nameprosedurc-prosedur-kerjaa" id="a-nameprosedurc-prosedur-kerjaa"><a name="prosedur">C. PROSEDUR KERJA</a></a></h2>
+<p><img src="inventory/../img/memindahkan-barang-di-gudang-yang-sama.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-28" id="a-nameoutputd-outputoutput-28"><a name="output">D. OUTPUT</output></a></h2>
+<ul>
+<li><em>Signal</em>: Internal Transfer selesai diproses, atau</li>
+<li><em>Signal</em>: Internal Transfer dibatalkan</li>
+</ul>
+<h1><a class="header" href="#merevisi-pemindahan-internal" id="merevisi-pemindahan-internal">Merevisi Pemindahan Internal</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-40" id="a-nameinputa-inputa-40"><a name="input">A. INPUT</a></a></h2>
+<ul>
+<li><em>Condition</em>: Ada kebutuhan untuk merevisi internal transfer dengan status cancel</li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-45" id="a-nameroleb-role-yang-terlibata-45"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Warehouse User</li>
+<li>Warehouse Manager</li>
+<li>Warehouse Helper</li>
+</ul>
+<h2><a class="header" href="#a-nameprosedurc-prosedur-kerjaa-1" id="a-nameprosedurc-prosedur-kerjaa-1"><a name="prosedur">C. PROSEDUR KERJA</a></a></h2>
+<p><img src="inventory/../img/merevisi-pemindahan-internal.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-29" id="a-nameoutputd-outputoutput-29"><a name="output">D. OUTPUT</output></a></h2>
+<ul>
+<li><em>Signal</em>: Internal Transfer selesai diproses, atau</li>
+<li><em>Signal</em>: Internal Transfer dibatalkan</li>
+</ul>
+<h1><a class="header" href="#menggunakan-barang-untuk-kebutuhan-internal" id="menggunakan-barang-untuk-kebutuhan-internal">Menggunakan Barang Untuk Kebutuhan Internal</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-41" id="a-nameinputa-inputa-41"><a name="input">A. INPUT</a></a></h2>
+<ul>
+<li><em>Condition</em>: Ada barang yang akan digunakan untuk keperluan internal</li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-46" id="a-nameroleb-role-yang-terlibata-46"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Warehouse User</li>
+<li>Warehouse Manager</li>
+</ul>
+<h2><a class="header" href="#a-nameprosedurc-prosedur-kerjaa-2" id="a-nameprosedurc-prosedur-kerjaa-2"><a name="prosedur">C. PROSEDUR KERJA</a></a></h2>
+<p><img src="inventory/../img/menggunakan-barang-konsumsi-internal.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-30" id="a-nameoutputd-outputoutput-30"><a name="output">D. OUTPUT</output></a></h2>
+<ul>
+<li><em>Signal</em>: Consume selesai diproses, atau</li>
+<li><em>Signal</em>: Consume dibatalkan</li>
+</ul>
+<h1><a class="header" href="#merevisi-penggunaan-internal-barang" id="merevisi-penggunaan-internal-barang">Merevisi Penggunaan Internal Barang</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-42" id="a-nameinputa-inputa-42"><a name="input">A. INPUT</a></a></h2>
+<ul>
+<li><em>Condition</em>: Ada kebutuhan untuk merevisi consume dengan status cancel</li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-47" id="a-nameroleb-role-yang-terlibata-47"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Warehouse User</li>
+<li>Warehouse Manager</li>
+</ul>
+<h2><a class="header" href="#a-nameprosedurc-prosedur-kerjaa-3" id="a-nameprosedurc-prosedur-kerjaa-3"><a name="prosedur">C. PROSEDUR KERJA</a></a></h2>
+<p><img src="inventory/../img/merevisi-penggunaan-internal-barang.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-31" id="a-nameoutputd-outputoutput-31"><a name="output">D. OUTPUT</output></a></h2>
+<ul>
+<li><em>Signal</em>: Consume selesai diproses, atau</li>
+<li><em>Signal</em>: Consume dibatalkan</li>
+</ul>
+<h1><a class="header" href="#membuang-barang" id="membuang-barang">Membuang Barang</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-43" id="a-nameinputa-inputa-43"><a name="input">A. INPUT</a></a></h2>
+<ul>
+<li><em>Condition</em>: Ada barang yang akan dibuang</li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-48" id="a-nameroleb-role-yang-terlibata-48"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Warehouse User</li>
+<li>Warehouse Manager</li>
+</ul>
+<h2><a class="header" href="#a-nameprosedurc-prosedur-kerjaa-4" id="a-nameprosedurc-prosedur-kerjaa-4"><a name="prosedur">C. PROSEDUR KERJA</a></a></h2>
+<p><img src="inventory/../img/membuang-barang.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-32" id="a-nameoutputd-outputoutput-32"><a name="output">D. OUTPUT</output></a></h2>
+<ul>
+<li><em>Signal</em>: Waste selesai diproses, atau</li>
+<li><em>Signal</em>: Waste dibatalkan</li>
+</ul>
+<h1><a class="header" href="#merevisi-pembuangan-barang" id="merevisi-pembuangan-barang">Merevisi Pembuangan Barang</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-44" id="a-nameinputa-inputa-44"><a name="input">A. INPUT</a></a></h2>
+<ul>
+<li><em>Condition</em>: Ada kebutuhan untuk merevisi waste dengan status <strong>Cancel</strong></li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-49" id="a-nameroleb-role-yang-terlibata-49"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Warehouse User</li>
+<li>Warehouse Manager</li>
+</ul>
+<h2><a class="header" href="#a-nameprosedurc-prosedur-kerjaa-5" id="a-nameprosedurc-prosedur-kerjaa-5"><a name="prosedur">C. PROSEDUR KERJA</a></a></h2>
+<p><img src="inventory/../img/merevisi-pembuangan-barang.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-33" id="a-nameoutputd-outputoutput-33"><a name="output">D. OUTPUT</output></a></h2>
+<ul>
+<li><em>Signal</em>: Waste selesai diproses, atau</li>
+<li><em>Signal</em>: Waste dibatalkan</li>
+</ul>
+<h1><a class="header" href="#mencatat-barang-yang-hilang" id="mencatat-barang-yang-hilang">Mencatat Barang Yang Hilang</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-45" id="a-nameinputa-inputa-45"><a name="input">A. INPUT</a></a></h2>
+<p>Ada barang yang hilang</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-50" id="a-nameroleb-role-yang-terlibata-50"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Warehouse User</li>
+<li>Warehouse Manager</li>
+<li>Warehouse Helper</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-44" id="a-nameinstruksic-instruksi-kerjaa-44"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="inventory/../img/mencatat-barang-hilang.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-34" id="a-nameoutputd-outputoutput-34"><a name="output">D. OUTPUT</output></a></h2>
+<h1><a class="header" href="#merevisi-pencatatan-barang-yang-hilang" id="merevisi-pencatatan-barang-yang-hilang">Merevisi Pencatatan Barang Yang Hilang</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-46" id="a-nameinputa-inputa-46"><a name="input">A. INPUT</a></a></h2>
+<ul>
+<li><em>Condition</em>: Ada kebutuhan untuk merevisi missing dengan status <strong>Cancel</strong></li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-51" id="a-nameroleb-role-yang-terlibata-51"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Warehouse User</li>
+<li>Warehouse Manager</li>
+</ul>
+<h2><a class="header" href="#a-nameprosedurc-prosedur-kerjaa-6" id="a-nameprosedurc-prosedur-kerjaa-6"><a name="prosedur">C. PROSEDUR KERJA</a></a></h2>
+<p><img src="inventory/../img/merevisi-barang-hilang.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-35" id="a-nameoutputd-outputoutput-35"><a name="output">D. OUTPUT</output></a></h2>
+<ul>
+<li><em>Signal</em>: Missing selesai diproses, atau</li>
+<li><em>Signal</em>: Missing dibatalkan</li>
+</ul>
+<h1><a class="header" href="#mencatat-barang-yang-dicuri" id="mencatat-barang-yang-dicuri">Mencatat Barang Yang Dicuri</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-47" id="a-nameinputa-inputa-47"><a name="input">A. INPUT</a></a></h2>
+<ul>
+<li><em>Condition</em>: Ada barang yang dicuri</li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-52" id="a-nameroleb-role-yang-terlibata-52"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Warehouse User</li>
+<li>Warehouse Manager</li>
+</ul>
+<h2><a class="header" href="#a-nameprosedurc-prosedur-kerjaa-7" id="a-nameprosedurc-prosedur-kerjaa-7"><a name="prosedur">C. PROSEDUR KERJA</a></a></h2>
+<p><img src="inventory/../img/mencatat-barang-dicuri.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-36" id="a-nameoutputd-outputoutput-36"><a name="output">D. OUTPUT</output></a></h2>
+<ul>
+<li><em>Signal</em>: Stolen selesai diproses, atau</li>
+<li><em>Signal</em>: Stolen dibatalkan</li>
+</ul>
+<h1><a class="header" href="#merevisi-pencatatan-barang-yang-dicuri" id="merevisi-pencatatan-barang-yang-dicuri">Merevisi Pencatatan Barang Yang Dicuri</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-48" id="a-nameinputa-inputa-48"><a name="input">A. INPUT</a></a></h2>
+<ul>
+<li><em>Condition</em>: Ada kebutuhan untuk merevisi stolen dengan status <strong>Cancel</strong></li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-53" id="a-nameroleb-role-yang-terlibata-53"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Warehouse User</li>
+<li>Warehouse Manager</li>
+</ul>
+<h2><a class="header" href="#a-nameprosedurc-prosedur-kerjaa-8" id="a-nameprosedurc-prosedur-kerjaa-8"><a name="prosedur">C. PROSEDUR KERJA</a></a></h2>
+<p><img src="inventory/../img/merevisi-barang-dicuri.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-37" id="a-nameoutputd-outputoutput-37"><a name="output">D. OUTPUT</output></a></h2>
+<ul>
+<li><em>Signal</em>: Stolen selesai diproses, atau</li>
+<li><em>Signal</em>: Stolen dibatalkan</li>
+</ul>
+<h1><a class="header" href="#outgoing-movement" id="outgoing-movement">Outgoing Movement</a></h1>
+<h1><a class="header" href="#memberikan-barang-untuk-promosi" id="memberikan-barang-untuk-promosi">Memberikan Barang Untuk Promosi</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-49" id="a-nameinputa-inputa-49"><a name="input">A. INPUT</a></a></h2>
+<ul>
+<li><em>Condition</em>: Ada barang yang akan diberikan secara gratis ke konsumen</li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-54" id="a-nameroleb-role-yang-terlibata-54"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Warehouse User</li>
+<li>Warehouse Manager</li>
+<li>Warehouse Helper</li>
+</ul>
+<h2><a class="header" href="#a-nameprosedurc-prosedur-kerjaa-9" id="a-nameprosedurc-prosedur-kerjaa-9"><a name="prosedur">C. PROSEDUR KERJA</a></a></h2>
+<p><img src="inventory/outgoing-movement/../../img/membuat-customer-promotion.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-38" id="a-nameoutputd-outputoutput-38"><a name="output">D. OUTPUT</output></a></h2>
+<ul>
+<li><em>Signal</em>: Customer Promotion selesai diproses, atau</li>
+<li><em>Signal</em>: Customer Promotion dibatalkan</li>
+</ul>
+<h1><a class="header" href="#merevisi-pemberian-barang-untuk-promosi" id="merevisi-pemberian-barang-untuk-promosi">Merevisi Pemberian Barang Untuk Promosi</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-50" id="a-nameinputa-inputa-50"><a name="input">A. INPUT</a></a></h2>
+<ul>
+<li><em>Condition</em>: Ada kebutuhan untuk merevisi <strong>Customer Promotion</strong> dengan status <strong>Cancel</strong></li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-55" id="a-nameroleb-role-yang-terlibata-55"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Warehouse User</li>
+<li>Warehouse Manager</li>
+<li>Warehouse Helper</li>
+</ul>
+<h2><a class="header" href="#a-nameprosedurc-prosedur-kerjaa-10" id="a-nameprosedurc-prosedur-kerjaa-10"><a name="prosedur">C. PROSEDUR KERJA</a></a></h2>
+<p><img src="inventory/outgoing-movement/../../img/merevisi-customer-promotion.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-39" id="a-nameoutputd-outputoutput-39"><a name="output">D. OUTPUT</output></a></h2>
+<ul>
+<li><em>Signal</em>: Customer Promotion selesai diproses, atau</li>
+<li><em>Signal</em>: Customer Promotion dibatalkan</li>
+</ul>
+<h1><a class="header" href="#mengeluarkan-barang-untuk-realisasi-customer-rma" id="mengeluarkan-barang-untuk-realisasi-customer-rma">Mengeluarkan Barang Untuk Realisasi Customer RMA</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-51" id="a-nameinputa-inputa-51"><a name="input">A. INPUT</a></a></h2>
+<ul>
+<li><em>Signal</em>: RMA Customer Out dikonfirmasi</li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-56" id="a-nameroleb-role-yang-terlibata-56"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Warehouse User</li>
+<li>Warehouse Manager</li>
+<li>Warehouse Helper</li>
+</ul>
+<h2><a class="header" href="#a-nameprosedurc-prosedur-kerjaa-11" id="a-nameprosedurc-prosedur-kerjaa-11"><a name="prosedur">C. PROSEDUR KERJA</a></a></h2>
+<p><img src="inventory/outgoing-movement/../../img/memproses-rma-customer-out.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-40" id="a-nameoutputd-outputoutput-40"><a name="output">D. OUTPUT</output></a></h2>
+<ul>
+<li><em>Signal</em>: RMA Customer Out selesai diproses, atau</li>
+<li><em>Signal</em>: RMA Customer Out dibatalkan</li>
+</ul>
+<h1><a class="header" href="#mengeluarkan-barang-untuk-supplier-rma" id="mengeluarkan-barang-untuk-supplier-rma">Mengeluarkan Barang Untuk Supplier RMA</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-52" id="a-nameinputa-inputa-52"><a name="input">A. INPUT</a></a></h2>
+<ul>
+<li><em>Signal</em>: RMA Supplier Out dikonfirmasi</li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-57" id="a-nameroleb-role-yang-terlibata-57"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Warehouse User</li>
+<li>Warehouse Manager</li>
+<li>Warehouse Helper</li>
+</ul>
+<h2><a class="header" href="#a-nameprosedurc-prosedur-kerjaa-12" id="a-nameprosedurc-prosedur-kerjaa-12"><a name="prosedur">C. PROSEDUR KERJA</a></a></h2>
+<p><img src="inventory/outgoing-movement/../../img/memproses-rma-supplier-out.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-41" id="a-nameoutputd-outputoutput-41"><a name="output">D. OUTPUT</output></a></h2>
+<ul>
+<li><em>Signal</em>: RMA Supplier Out selesai diproses, atau</li>
+<li><em>Signal</em>: RMA Supplier Out dibatalkan</li>
+</ul>
+<h1><a class="header" href="#mengeluarkan-barang-untuk-dijual-ke-konsumen" id="mengeluarkan-barang-untuk-dijual-ke-konsumen">Mengeluarkan Barang Untuk Dijual Ke Konsumen</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-53" id="a-nameinputa-inputa-53"><a name="input">A. INPUT</a></a></h2>
+<ul>
+<li><em>Signal</em>: Delivery Order dikonfirmasi</li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-58" id="a-nameroleb-role-yang-terlibata-58"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Warehouse User</li>
+<li>Warehouse Manager</li>
+<li>Warehouse Helper</li>
+</ul>
+<h2><a class="header" href="#a-nameprosedurc-prosedur-kerjaa-13" id="a-nameprosedurc-prosedur-kerjaa-13"><a name="prosedur">C. PROSEDUR KERJA</a></a></h2>
+<p><img src="inventory/outgoing-movement/../../img/memproses-delivery-order.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputoutput-42" id="a-nameoutputd-outputoutput-42"><a name="output">D. OUTPUT</output></a></h2>
+<ul>
+<li><em>Signal</em>: Delivery Order selesai diproses, atau</li>
+<li><em>Signal</em>: Delivery Order dibatalkan</li>
+</ul>
+<h1><a class="header" href="#sales" id="sales">Sales</a></h1>
+<h1><a class="header" href="#purchase" id="purchase">Purchase</a></h1>
+<h1><a class="header" href="#manufacture" id="manufacture">Manufacture</a></h1>
+<h1><a class="header" href="#human-resource" id="human-resource">Human Resource</a></h1>
+<h1><a class="header" href="#career-administration" id="career-administration">Career Administration</a></h1>
+<h1><a class="header" href="#memberikan-sanksi" id="memberikan-sanksi">Memberikan Sanksi</a></h1>
+<h2><a class="header" href="#a-nameinputa-start-eventa" id="a-nameinputa-start-eventa"><a name="input">A. START EVENT</a></a></h2>
+<ul>
+<li><em>Condition</em>: Ada karyawan yang terbukti melakukan pelanggaran</li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-59" id="a-nameroleb-role-yang-terlibata-59"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Employee Dicipline User</li>
+<li>Employee Dicipline Validator</li>
+<li>Employee Dicipline Comitee</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-45" id="a-nameinstruksic-instruksi-kerjaa-45"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="hr/career-administration/../../img/memberikan-sanksi-karyawan.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputa" id="a-nameoutputd-outputa"><a name="output">D. OUTPUT</a></a></h2>
+<ul>
+<li><em>Signal</em>: Notifikasi <strong>Employee Dicipline Selesai Diproses</strong></li>
+</ul>
+<h1><a class="header" href="#merevisi-employee-dicipline" id="merevisi-employee-dicipline">Merevisi Employee Dicipline</a></h1>
+<h2><a class="header" href="#a-nameinputa-start-eventa-1" id="a-nameinputa-start-eventa-1"><a name="input">A. START EVENT</a></a></h2>
+<ul>
+<li><em>Condition</em>: Ada</li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-60" id="a-nameroleb-role-yang-terlibata-60"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Employee Dicipline User</li>
+<li>Employee Dicipline Validator</li>
+<li>Employee Dicipline Comitee</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-46" id="a-nameinstruksic-instruksi-kerjaa-46"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="hr/career-administration/../../img/merevisi-sanksi-karyawan.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputa-1" id="a-nameoutputd-outputa-1"><a name="output">D. OUTPUT</a></a></h2>
+<ul>
+<li><em>Signal</em>: Notifikasi <strong>Employee Dicipline Selesai Diproses</strong></li>
+</ul>
+<h1><a class="header" href="#attendance" id="attendance">Attendance</a></h1>
+<h1><a class="header" href="#membuat-timesheet" id="membuat-timesheet">Membuat Timesheet</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-54" id="a-nameinputa-inputa-54"><a name="input">A. INPUT</a></a></h2>
+<p><em>Time</em>: H-1 Periode Absen</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-61" id="a-nameroleb-role-yang-terlibata-61"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>HR Attendance</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-47" id="a-nameinstruksic-instruksi-kerjaa-47"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="hr/attendance/../../img/membuat-timesheet-masal.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputa-2" id="a-nameoutputd-outputa-2"><a name="output">D. OUTPUT</a></a></h2>
+<p><em>Tidak ada end event yang spesifik</em></p>
+<h1><a class="header" href="#mengimport-absensi" id="mengimport-absensi">Mengimport Absensi</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-55" id="a-nameinputa-inputa-55"><a name="input">A. INPUT</a></a></h2>
+<ul>
+<li><em>Message</em>: H+1 Periode Absen</li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-62" id="a-nameroleb-role-yang-terlibata-62"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>HR Attendance</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-48" id="a-nameinstruksic-instruksi-kerjaa-48"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="hr/attendance/../../img/mengimport-absensi-dari-mesin-absen.png" alt="" /></p>
+<h2><a class="header" href="#a-nameinputd-outputa" id="a-nameinputd-outputa"><a name="input">D. OUTPUT</a></a></h2>
+<p><em>Tidak ada end event spesifik</em></p>
+<h1><a class="header" href="#memproses-timesheet" id="memproses-timesheet">Memproses Timesheet</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-56" id="a-nameinputa-inputa-56"><a name="input">A. INPUT</a></a></h2>
+<ul>
+<li><em>Signal</em>: Notifikasi <strong>Timesheet Dibuat</strong></li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-63" id="a-nameroleb-role-yang-terlibata-63"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>All User</li>
+<li>Timesheet Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-49" id="a-nameinstruksic-instruksi-kerjaa-49"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="hr/attendance/../../img/submit-timesheet.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputa-3" id="a-nameoutputd-outputa-3"><a name="output">D. OUTPUT</a></a></h2>
+<ul>
+<li><em>Signal</em>: Notifikasi <strong>Timesheet Disetujui</strong>, atau</li>
+<li><em>Signal</em>: Notifikasi <strong>Timesheet Ditolak</strong></li>
+</ul>
+<h1><a class="header" href="#merevisi-timesheet" id="merevisi-timesheet">Merevisi Timesheet</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-57" id="a-nameinputa-inputa-57"><a name="input">A. INPUT</a></a></h2>
+<ul>
+<li><em>Condition</em>: Ada kebutuhan untuk merevisi timesheet dengan status <strong>Approved</strong> atau <strong>Rejected</strong></li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-64" id="a-nameroleb-role-yang-terlibata-64"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>All User</li>
+<li>Timesheet Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-50" id="a-nameinstruksic-instruksi-kerjaa-50"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="hr/attendance/../../img/merevisi-timesheet.png" alt="" /></p>
+<h2><a class="header" href="#a-nameoutputd-outputa-4" id="a-nameoutputd-outputa-4"><a name="output">D. OUTPUT</a></a></h2>
+<ul>
+<li><em>Signal</em>: Notifikasi <strong>Timesheet Disetujui</strong>, atau</li>
+<li><em>Signal</em>: Notifikasi <strong>Timesheet Ditolak</strong></li>
+</ul>
+<h1><a class="header" href="#membuat-overtime-request" id="membuat-overtime-request">Membuat Overtime Request</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-58" id="a-nameinputa-inputa-58"><a name="input">A. INPUT</a></a></h2>
+<ul>
+<li><em>Condition</em>: Ada <strong>kebutuhan untuk lembur</strong>, atau</li>
+<li><em>Condition</em>: Ada <strong>lembur sudah dilakukan tapi belum dibuat pengajuan lembur</strong></li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-65" id="a-nameroleb-role-yang-terlibata-65"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>All User</li>
+<li>HR Overtime Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-51" id="a-nameinstruksic-instruksi-kerjaa-51"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="hr/attendance/../../img/membuat-overtime.png" alt="" /></p>
+<h2><a class="header" href="#a-nameinputd-outputa-1" id="a-nameinputd-outputa-1"><a name="input">D. OUTPUT</a></a></h2>
+<ul>
+<li><em>Signal</em>: Notifikasi <strong>Permintaan Persetujuan Lembur Selesai Diproses</strong>, atau</li>
+<li><em>Signal</em>: Notifikasi <strong>Permintaan Persetujuan Lembur Dibatalkan</strong></li>
+</ul>
+<h1><a class="header" href="#merevisi-overtime-request" id="merevisi-overtime-request">Merevisi Overtime Request</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-59" id="a-nameinputa-inputa-59"><a name="input">A. INPUT</a></a></h2>
+<ul>
+<li><em>Condition</em>: Ada <strong>kebutuhan untuk merevisi pengajuan lembur</strong></li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-66" id="a-nameroleb-role-yang-terlibata-66"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>All User</li>
+<li>HR Overtime Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa-52" id="a-nameinstruksic-instruksi-kerjaa-52"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="hr/attendance/../../img/merevisi-overtime.png" alt="" /></p>
+<h2><a class="header" href="#a-nameinputd-outputa-2" id="a-nameinputd-outputa-2"><a name="input">D. OUTPUT</a></a></h2>
+<ul>
+<li><em>Signal</em>: Notifikasi <strong>Permintaan Persetujuan Lembur Selesai Diproses</strong>, atau</li>
+<li><em>Signal</em>: Notifikasi <strong>Permintaan Persetujuan Lembur Dibatalkan</strong></li>
+</ul>
+<h1><a class="header" href="#membuat-leave-request" id="membuat-leave-request">Membuat Leave Request</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-60" id="a-nameinputa-inputa-60"><a name="input">A. INPUT</a></a></h2>
+<ul>
+<li><em>Condition</em>: Ada <strong>kebutuhan untuk cuti/izin</strong>, atau</li>
+<li><em>Condition</em>: Ada <strong>cuti/izin sudah dilakukan tapi belum dibuat pengajuan cuti/izin</strong></li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-67" id="a-nameroleb-role-yang-terlibata-67"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>All User</li>
+<li>HR Leave Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameprosedurc-prosedura" id="a-nameprosedurc-prosedura"><a name="prosedur">C. PROSEDUR</a></a></h2>
+<p><img src="hr/attendance/../../img/membuat-leave-request.png" alt="" /></p>
+<h2><a class="header" href="#a-nameinputd-outputa-3" id="a-nameinputd-outputa-3"><a name="input">D. OUTPUT</a></a></h2>
+<ul>
+<li><em>Signal</em>: Notifikasi <strong>Leave Request Selesai Diproses</strong>, atau</li>
+<li><em>Signal</em>: Notifikasi <strong>Leave Request Ditolak</strong></li>
+</ul>
+<h1><a class="header" href="#merevisi-leave-request" id="merevisi-leave-request">Merevisi Leave Request</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-61" id="a-nameinputa-inputa-61"><a name="input">A. INPUT</a></a></h2>
+<ul>
+<li><em>Condition</em>: Ada <strong>kebutuhan untuk merevisi leave/request</strong>, atau</li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-68" id="a-nameroleb-role-yang-terlibata-68"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>All User</li>
+<li>HR Leave Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameprosedurc-prosedura-1" id="a-nameprosedurc-prosedura-1"><a name="prosedur">C. PROSEDUR</a></a></h2>
+<p><img src="hr/attendance/../../img/merevisi-leave-request.png" alt="" /></p>
+<h2><a class="header" href="#a-nameinputd-outputa-4" id="a-nameinputd-outputa-4"><a name="input">D. OUTPUT</a></a></h2>
+<ul>
+<li><em>Signal</em>: Notifikasi <strong>Leave Request Selesai Diproses</strong>, atau</li>
+<li><em>Signal</em>: Notifikasi <strong>Leave Request Ditolak</strong></li>
+</ul>
+<h1><a class="header" href="#payslip" id="payslip">Payslip</a></h1>
+<h1><a class="header" href="#membuat-payslip-batch" id="membuat-payslip-batch">Membuat Payslip Batch</a></h1>
+<h1><a class="header" href="#memproses-payslip" id="memproses-payslip">Memproses Payslip</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-62" id="a-nameinputa-inputa-62"><a name="input">A. INPUT</a></a></h2>
+<ul>
+<li><em>Signal</em>: Notifikasi <strong>Payslip Dibuat</strong></li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-69" id="a-nameroleb-role-yang-terlibata-69"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Payroll User</li>
+<li>Payroll Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameprosedurc-prosedur-kerjaa-14" id="a-nameprosedurc-prosedur-kerjaa-14"><a name="prosedur">C. PROSEDUR KERJA</a></a></h2>
+<p><img src="hr/payslip/../../img/memproses-payslip.png" alt="" /></p>
+<h2><a class="header" href="#a-nameinputd-outputa-5" id="a-nameinputd-outputa-5"><a name="input">D. OUTPUT</a></a></h2>
+<ul>
+<li><em>Signal</em>: Notifikasi <strong>Payslip Selesai Diproses</strong>, atau</li>
+<li><em>Signal</em>: Notifikasi <strong>Payslip Dibatalkan</strong></li>
+</ul>
+<h1><a class="header" href="#membatalkan-payslip" id="membatalkan-payslip">Membatalkan Payslip</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-63" id="a-nameinputa-inputa-63"><a name="input">A. INPUT</a></a></h2>
+<ul>
+<li><em>Condition</em>: Ada <strong>kebutuhan untuk membatalkan payslip dengan status done</strong></li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-70" id="a-nameroleb-role-yang-terlibata-70"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Payroll User</li>
+</ul>
+<h2><a class="header" href="#a-nameprosedurc-prosedur-kerjaa-15" id="a-nameprosedurc-prosedur-kerjaa-15"><a name="prosedur">C. PROSEDUR KERJA</a></a></h2>
+<p><img src="hr/payslip/../../img/membatalkan-payslip.png" alt="" /></p>
+<h2><a class="header" href="#a-nameinputd-outputa-6" id="a-nameinputd-outputa-6"><a name="input">D. OUTPUT</a></a></h2>
+<ul>
+<li><em>Signal</em>: Notifikasi <strong>Payslip Dibatalkan</strong></li>
+</ul>
+<h1><a class="header" href="#merevisi-payslip" id="merevisi-payslip">Merevisi Payslip</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa-64" id="a-nameinputa-inputa-64"><a name="input">A. INPUT</a></a></h2>
+<ul>
+<li><em>Condition</em>: Ada <strong>kebutuhan untuk merevisi payslip dengan status cancel</strong></li>
+</ul>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata-71" id="a-nameroleb-role-yang-terlibata-71"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>Payroll User</li>
+<li>Payroll Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameprosedurc-prosedur-kerjaa-16" id="a-nameprosedurc-prosedur-kerjaa-16"><a name="prosedur">C. PROSEDUR KERJA</a></a></h2>
+<p><img src="hr/payslip/../../img/merevisi-payslip.png" alt="" /></p>
+<h2><a class="header" href="#a-nameinputd-outputa-7" id="a-nameinputd-outputa-7"><a name="input">D. OUTPUT</a></a></h2>
+<ul>
+<li><em>Signal</em>: Notifikasi <strong>Payslip Selesai Diproses</strong>, atau</li>
+<li><em>Signal</em>: Notifikasi <strong>Payslip Dibatalkan</strong></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
+        
+
+    </body>
+</html>

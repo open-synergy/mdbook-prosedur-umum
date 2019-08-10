@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Merevisi Debit Note - Odoo - Prosedur Umum</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../prakata.html">Pra-kata</a></li><li class="affix"><a href="../terminologi.html">Terminologi</a></li><li><a href="../fa.html"><strong aria-hidden="true">1.</strong> Finance &amp; Accounting</a></li><li><ol class="section"><li><a href="../fa/ar.html"><strong aria-hidden="true">1.1.</strong> A/R</a></li><li><ol class="section"><li><a href="../fa/merilis-customer-invoice-manual.html"><strong aria-hidden="true">1.1.1.</strong> Merilis Customer Invoice Secara Manual</a></li><li><a href="../fa/membatalkan-customer-invoice.html"><strong aria-hidden="true">1.1.2.</strong> Membatalkan Customer Invoice</a></li><li><a href="../fa/merevisi-customer-invoice.html"><strong aria-hidden="true">1.1.3.</strong> Merevisi Customer Invoice</a></li><li><a href="../fa/settlement-uang-muka-penjualan.html"><strong aria-hidden="true">1.1.4.</strong> Settlement Customer Invoice Dengan Uang Muka Penjualan</a></li><li><a href="../fa/merevisi-settlement-uang-muka-penjualan.html"><strong aria-hidden="true">1.1.5.</strong> Merevisi Settlement Customer Invoice Dengan Uang Muka Penjualan</a></li><li><a href="../fa/membatalkan-settlement-uang-muka-penjualan.html"><strong aria-hidden="true">1.1.6.</strong> Membatalkan Settlement Customer Invoice Dengan Uang Muka Penjualan</a></li><li><a href="../fa/membuat-credit-note-manual.html"><strong aria-hidden="true">1.1.7.</strong> Merilis Credit Note Secara Manual</a></li><li><a href="../fa/merevisi-credit-note.html"><strong aria-hidden="true">1.1.8.</strong> Merevisi Credit Note</a></li><li><a href="../fa/membatalkan-credit-note.html"><strong aria-hidden="true">1.1.9.</strong> Membatalkan Credit Note</a></li><li><a href="../fa/settlement-credit-note.html"><strong aria-hidden="true">1.1.10.</strong> Settlement Customer Invoice Dengan Credit Note</a></li><li><a href="../fa/merevisi-settlement-credit-note.html"><strong aria-hidden="true">1.1.11.</strong> Merevisi Settlement Customer Invoice Dengan Credit Note</a></li><li><a href="../fa/membatalkan-settlement-credit-note.html"><strong aria-hidden="true">1.1.12.</strong> Membatalkan Settlement Customer Invoice Dengan Credit Note</a></li><li><a href="../fa/settlement-invoice.html"><strong aria-hidden="true">1.1.13.</strong> Settlement Customer Invoice Dengan Supplier Invoice</a></li><li><a href="../fa/merevisi-settlement-invoice.html"><strong aria-hidden="true">1.1.14.</strong> Merevisi Settlement Customer Invoice Dengan Supplier Invoice</a></li><li><a href="../fa/membatalkan-settlement-invoice.html"><strong aria-hidden="true">1.1.15.</strong> Membatalkan Settlement Customer Invoice Dengan Supplier Invoice</a></li></ol></li><li><a href="../fa/ap.html"><strong aria-hidden="true">1.2.</strong> A/P</a></li><li><ol class="section"><li><a href="../fa/membuat-supplier-invoice-manual.html"><strong aria-hidden="true">1.2.1.</strong> Menerima Supplier Invoice Secara Manual</a></li><li><a href="../fa/merevisi-supplier-invoice.html"><strong aria-hidden="true">1.2.2.</strong> Merevisi Supplier Invoice</a></li><li><a href="../fa/membatalkan-supplier-invoice.html"><strong aria-hidden="true">1.2.3.</strong> Membatalkan Supplier Invoice</a></li><li><a href="../fa/settlement-uang-muka-pembelian.html"><strong aria-hidden="true">1.2.4.</strong> Settlement Supplier Invoice Dengan Uang Muka Pembelian</a></li><li><a href="../fa/merevisi-settlement-uang-muka-pembelian.html"><strong aria-hidden="true">1.2.5.</strong> Merevisi Settlement Supplier Invoice Dengan Uang Muka Pembelian</a></li><li><a href="../fa/membatalkan-settlement-uang-muka-pembelian.html"><strong aria-hidden="true">1.2.6.</strong> Membatalkan Settlement Supplier Invoice Dengan Uang Muka Pembelian</a></li><li><a href="../fa/membuat-debit-note-manual.html"><strong aria-hidden="true">1.2.7.</strong> Menerima Debit Note Secara Manual</a></li><li><a href="../fa/merevisi-debit-note.html" class="active"><strong aria-hidden="true">1.2.8.</strong> Merevisi Debit Note</a></li><li><a href="../fa/membatalkan-debit-note.html"><strong aria-hidden="true">1.2.9.</strong> Membatalkan Debit Note</a></li><li><a href="../fa/settlement-debit-note.html"><strong aria-hidden="true">1.2.10.</strong> Settlement Supplier Invoice Dengan Debit Note</a></li><li><a href="../fa/merevisi-settlement-debit-note.html"><strong aria-hidden="true">1.2.11.</strong> Merevisi Settlement Supplier Invoice Dengan Debit Note</a></li><li><a href="../fa/membatalkan-settlement-debit-note.html"><strong aria-hidden="true">1.2.12.</strong> Membatalkan Settlement Supplier Invoice Dengan Debit Note</a></li></ol></li><li><a href="../fa/bank-kas.html"><strong aria-hidden="true">1.3.</strong> Bank &amp; Kas</a></li><li><ol class="section"><li><a href="../fa/menerima-bank.html"><strong aria-hidden="true">1.3.1.</strong> Menerima Uang Di Bank</a></li><li><a href="../fa/merevisi-penerimaan-bank.html"><strong aria-hidden="true">1.3.2.</strong> Merevisi Penerimaan Bank</a></li><li><a href="../fa/menerima-kas.html"><strong aria-hidden="true">1.3.3.</strong> Menerima Uang Di Kas</a></li><li><a href="../fa/revisi-penerimaan-kas.html"><strong aria-hidden="true">1.3.4.</strong> Merevisi Penerimaan Kas</a></li><li><a href="../fa/mengeluarkan-bank.html"><strong aria-hidden="true">1.3.5.</strong> Mengeluarkan Uang Melalui Bank</a></li><li><a href="../fa/merevisi-pengeluaran-bank.html"><strong aria-hidden="true">1.3.6.</strong> Merevisi Pengeluaran Bank</a></li><li><a href="../fa/mengeluarkan-kas.html"><strong aria-hidden="true">1.3.7.</strong> Mengeluarkan Uang Melalui Kas</a></li><li><a href="../fa/merevisi-pengeluaran-kas.html"><strong aria-hidden="true">1.3.8.</strong> Merevisi Pengeluaran Kas</a></li></ol></li></ol></li><li><a href="../inventory.html"><strong aria-hidden="true">2.</strong> Inventory</a></li><li><ol class="section"><li><a href="../inventory/stock-opname.html"><strong aria-hidden="true">2.1.</strong> Stok Opname</a></li><li><a href="../inventory/create-pull-flow.html"><strong aria-hidden="true">2.2.</strong> Meminta Barang Dari Gudang Lain</a></li><li><a href="../inventory/memproses-interwarehouse-out-pull-flow.html"><strong aria-hidden="true">2.3.</strong> Memproses Permintaan Barang Dari Gudang Lain</a></li><li><a href="../inventory/menerima-barang.html"><strong aria-hidden="true">2.4.</strong> Menerima Barang</a></li><li><ol class="section"><li><a href="../inventory/menerima-pihak-ketiga.html"><strong aria-hidden="true">2.4.1.</strong> Menerima Barang Dari Pihak Ketiga Lainnya</a></li><li><a href="../inventory/menerima-konsumen.html"><strong aria-hidden="true">2.4.2.</strong> Menerima Barang Dari Konsumen</a></li><li><ol class="section"><li><a href="../inventory/menerima-retur-jual.html"><strong aria-hidden="true">2.4.2.1.</strong> Menerima Barang Retur Penjualan</a></li></ol></li><li><a href="../inventory/menerima-resupply.html"><strong aria-hidden="true">2.4.3.</strong> Menerima Resupply Dari Gudang Lain</a></li><li><a href="../inventory/menerima-supplier.html"><strong aria-hidden="true">2.4.4.</strong> Menerima Barang Dari Supplier</a></li><li><ol class="section"><li><a href="../inventory/menerima-hasil-pembelian.html"><strong aria-hidden="true">2.4.4.1.</strong> Menerima Barang Hasil Pembelian</a></li><li><a href="../inventory/menerima-promosi.html"><strong aria-hidden="true">2.4.4.2.</strong> Menerima Barang Promosi</a></li><li><a href="../inventory/menerima-realisasi-retur-beli.html"><strong aria-hidden="true">2.4.4.3.</strong> Menerima Barang Realisasi Retur Pembelian</a></li></ol></li><li><a href="../inventory/menerima-karyawan.html"><strong aria-hidden="true">2.4.5.</strong> Menerima Barang Dari Karyawan</a></li></ol></li><li><a href="../inventory/internal-movement.html"><strong aria-hidden="true">2.5.</strong> Internal Movement</a></li><li><ol class="section"><li><a href="../inventory/internal-transfer.html"><strong aria-hidden="true">2.5.1.</strong> Memindahkan Barang Dari Antar Lokasi Di Gudang Yang Sama</a></li><li><a href="../inventory/merevisi-pemindahan-internal.html"><strong aria-hidden="true">2.5.2.</strong> Merevisi Pemindahan Internal</a></li><li><a href="../inventory/konsumsi-internal.html"><strong aria-hidden="true">2.5.3.</strong> Menggunakan Barang Untuk Kebutuhan Internal</a></li><li><a href="../inventory/merevisi-konsumsi-internal.html"><strong aria-hidden="true">2.5.4.</strong> Merevisi Penggunaan Internal Barang</a></li><li><a href="../inventory/consume.html"><strong aria-hidden="true">2.5.5.</strong> Membuang Barang</a></li><li><a href="../inventory/merevisi-pembuangan-barang.html"><strong aria-hidden="true">2.5.6.</strong> Merevisi Pembuangan Barang</a></li><li><a href="../inventory/missing.html"><strong aria-hidden="true">2.5.7.</strong> Mencatat Barang Yang Hilang</a></li><li><a href="../inventory/merevisi-missing.html"><strong aria-hidden="true">2.5.8.</strong> Merevisi Pencatatan Barang Yang Hilang</a></li><li><a href="../inventory/stolen.html"><strong aria-hidden="true">2.5.9.</strong> Mencatat Barang Yang Dicuri</a></li><li><a href="../inventory/merevisi-stolen.html"><strong aria-hidden="true">2.5.10.</strong> Merevisi Pencatatan Barang Yang Dicuri</a></li></ol></li><li><a href="../inventory/outgoing-movement.html"><strong aria-hidden="true">2.6.</strong> Outgoing Movement</a></li><li><ol class="section"><li><a href="../inventory/outgoing-movement/membuat-customer-promotion.html"><strong aria-hidden="true">2.6.1.</strong> Memberikan Barang Untuk Promosi</a></li><li><a href="../inventory/outgoing-movement/merevisi-customer-promotion.html"><strong aria-hidden="true">2.6.2.</strong> Merevisi Pemberian Barang Untuk Promosi</a></li><li><a href="../inventory/outgoing-movement/memproses-rma-customer-out.html"><strong aria-hidden="true">2.6.3.</strong> Mengeluarkan Barang Untuk Realisasi Customer RMA</a></li><li><a href="../inventory/outgoing-movement/memproses-rma-supplier-out.html"><strong aria-hidden="true">2.6.4.</strong> Mengeluarkan Barang Untuk Supplier RMA</a></li><li><a href="../inventory/outgoing-movement/memproses-delivery-order.html"><strong aria-hidden="true">2.6.5.</strong> Mengeluarkan Barang Untuk Dijual Ke Konsumen</a></li></ol></li></ol></li><li><a href="../sales.html"><strong aria-hidden="true">3.</strong> Sales</a></li><li><a href="../purchase.html"><strong aria-hidden="true">4.</strong> Purchase</a></li><li><a href="../manufacture.html"><strong aria-hidden="true">5.</strong> Manufacture</a></li><li><a href="../hr.html"><strong aria-hidden="true">6.</strong> Human Resource</a></li><li><ol class="section"><li><a href="../hr/career-administration.html"><strong aria-hidden="true">6.1.</strong> Career Administration</a></li><li><ol class="section"><li><a href="../hr/career-administration/memberikan-sanksi.html"><strong aria-hidden="true">6.1.1.</strong> Memberikan Sanksi</a></li><li><a href="../hr/career-administration/merevisi-sanksi.html"><strong aria-hidden="true">6.1.2.</strong> Merevisi Employee Dicipline</a></li></ol></li><li><a href="../hr/attendance.html"><strong aria-hidden="true">6.2.</strong> Attendance</a></li><li><ol class="section"><li><a href="../hr/attendance/membuat-timesheet-masal.html"><strong aria-hidden="true">6.2.1.</strong> Membuat Timesheet</a></li><li><a href="../hr/attendance/mengimport-data-absen.html"><strong aria-hidden="true">6.2.2.</strong> Mengimport Absensi</a></li><li><a href="../hr/attendance/mengumpulkan-timesheet.html"><strong aria-hidden="true">6.2.3.</strong> Memproses Timesheet</a></li><li><a href="../hr/attendance/merevisi-timesheet.html"><strong aria-hidden="true">6.2.4.</strong> Merevisi Timesheet</a></li><li><a href="../hr/attendance/membuat-overtime-request.html"><strong aria-hidden="true">6.2.5.</strong> Membuat Overtime Request</a></li><li><a href="../hr/attendance/merevisi-overtime-request.html"><strong aria-hidden="true">6.2.6.</strong> Merevisi Overtime Request</a></li><li><a href="../hr/attendance/membuat-leave-request.html"><strong aria-hidden="true">6.2.7.</strong> Membuat Leave Request</a></li><li><a href="../hr/attendance/merevisi-leave-request.html"><strong aria-hidden="true">6.2.8.</strong> Merevisi Leave Request</a></li></ol></li><li><a href="../hr/payslip.html"><strong aria-hidden="true">6.3.</strong> Payslip</a></li><li><ol class="section"><li><a href="../hr/payslip/membuat-payslip-batch.html"><strong aria-hidden="true">6.3.1.</strong> Membuat Payslip Batch</a></li><li><a href="../hr/payslip/memproses-payslip.html"><strong aria-hidden="true">6.3.2.</strong> Memproses Payslip</a></li><li><a href="../hr/payslip/membatalkan-payslip.html"><strong aria-hidden="true">6.3.3.</strong> Membatalkan Payslip</a></li><li><a href="../hr/payslip/merevisi-payslip.html"><strong aria-hidden="true">6.3.4.</strong> Merevisi Payslip</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Odoo - Prosedur Umum</h1>
+
+                        <div class="right-buttons">
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#merevisi-debit-note" id="merevisi-debit-note">Merevisi Debit Note</a></h1>
+<h2><a class="header" href="#a-nameinputa-inputa" id="a-nameinputa-inputa"><a name="input">A. INPUT</a></a></h2>
+<p><em>Condition</em>: Ada kebutuhan untuk merevisi Debit Note</p>
+<h2><a class="header" href="#a-nameroleb-role-yang-terlibata" id="a-nameroleb-role-yang-terlibata"><a name="role">B. ROLE YANG TERLIBAT</a></a></h2>
+<ul>
+<li>A/P</li>
+<li>Debit Note Validator</li>
+</ul>
+<h2><a class="header" href="#a-nameinstruksic-instruksi-kerjaa" id="a-nameinstruksic-instruksi-kerjaa"><a name="instruksi">C. INSTRUKSI KERJA</a></a></h2>
+<p><img src="../img/merevisi-debit-note.png" alt="" /></p>
+<h2><a class="header" href="#a-nameinputd-enda" id="a-nameinputd-enda"><a name="input">D. END</a></a></h2>
+<p><em>Message</em>: Debit Note selesai diproses</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../fa/membuat-debit-note-manual.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../fa/membatalkan-debit-note.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../fa/membuat-debit-note-manual.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../fa/membatalkan-debit-note.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
