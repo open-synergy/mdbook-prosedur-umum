@@ -70,6 +70,8 @@
         - [Memberikan Barang Untuk Promosi](./inventory/outgoing-movement/membuat-customer-promotion.md)
         - [Merevisi Pemberian Barang Untuk Promosi](./inventory/outgoing-movement/merevisi-customer-promotion.md)
         - [Mengeluarkan Barang Untuk Realisasi Customer RMA](./inventory/outgoing-movement/memproses-rma-customer-out.md)
+        - [Mengeluarkan Barang Untuk Supplier RMA](./inventory/outgoing-movement/memproses-rma-supplier-out.md)
+        - [Mengeluarkan Barang Untuk Dijual Ke Konsumen](./inventory/outgoing-movement/memproses-delivery-order.md)        
 - [Sales](./sales.md)
 - [Purchase](./purchase.md)
 - [Manufacture](./manufacture.md)
